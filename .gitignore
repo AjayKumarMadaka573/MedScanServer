@@ -17,3 +17,4 @@ Thumbs.db
 # Optional: Ignore build artifacts
 dist/
 build/
+"*.pth" 
