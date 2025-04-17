@@ -1,15 +1,0 @@
-/u/student/2021/cs21resch15002/DomainShift/./dann.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
-  warnings.warn('You have chosen to seed training. '
-=> using model 'resnet18'
-Extracted Feature Dim: 512
-Extracting Features:   0%|          | 0/14 [00:00<?, ?it/s]Extracting Features:   0%|          | 0/14 [00:10<?, ?it/s]
-Traceback (most recent call last):
-  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 419, in <module>
-    main(args)
-  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 134, in main
-    source_feature = collect_feature(train_source_loader, feature_extractor, device)
-                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/u/student/2021/cs21resch15002/DomainShift/tllib/utils/analysis/__init__.py", line 72, in collect_feature
-    inputs = torch.stack(data[0]).to(device)  # (B, 3, 224, 224)
-             ^^^^^^^^^^^^^^^^^^^^
-TypeError: stack(): argument 'tensors' (position 1) must be tuple of Tensors, not Tensor

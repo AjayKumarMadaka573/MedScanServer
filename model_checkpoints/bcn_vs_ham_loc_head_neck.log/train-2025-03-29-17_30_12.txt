@@ -1,1309 +1,0 @@
-/u/student/2021/cs21resch15002/DomainShift/./dann.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
-  warnings.warn('You have chosen to seed training. '
-=> using model 'resnet18'
-Extracted Feature Dim: 512
-lr: 0.001
-Epoch [0]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [0]:   0%|          | 0/250 [00:37<?, ?it/s, Loss=14.2904, ClsAcc=59.38%, DomainAcc=50.00%, LR=9.31e-04]Epoch [0]:  40%|####      | 100/250 [00:37<00:56,  2.64it/s, Loss=14.2904, ClsAcc=59.38%, DomainAcc=50.00%, LR=9.31e-04]
-Step 100/250:
-• Loss: 14.2904 (Cls: 0.6757, DA: 13.6147)
-• Batch: 32 src, 32 tgt samples
-• Mem: 242.5MB used
-
-Epoch [0]:  40%|####      | 100/250 [01:06<00:56,  2.64it/s, Loss=1.3280, ClsAcc=50.00%, DomainAcc=64.06%, LR=8.72e-04] Epoch [0]:  80%|########  | 200/250 [01:06<00:16,  3.06it/s, Loss=1.3280, ClsAcc=50.00%, DomainAcc=64.06%, LR=8.72e-04]
-Step 200/250:
-• Loss: 1.3280 (Cls: 0.6171, DA: 0.7110)
-• Batch: 32 src, 32 tgt samples
-• Mem: 242.5MB used
-
-Epoch [0]:  80%|########  | 200/250 [01:21<00:16,  3.06it/s, Loss=1.0662, ClsAcc=65.62%, DomainAcc=71.88%, LR=8.46e-04]Epoch [0]: |          | 300/? [01:21<00:00,  4.09it/s, Loss=1.0662, ClsAcc=65.62%, DomainAcc=71.88%, LR=8.46e-04]      
-Step 250/250:
-• Loss: 1.0662 (Cls: 0.4751, DA: 0.5911)
-• Batch: 32 src, 32 tgt samples
-• Mem: 242.5MB used
-
-Epoch [0]: |          | 300/? [01:21<00:00,  3.68it/s, Loss=1.0662, ClsAcc=65.62%, DomainAcc=71.88%, LR=8.46e-04]
-Test:[0/7]	Time  0.860 ( 0.860)	Loss 6.1770e-01 (6.1770e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0008458970107524513
-Epoch [1]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [1]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.2649, ClsAcc=56.25%, DomainAcc=73.44%, LR=7.98e-04]Epoch [1]:  40%|####      | 100/250 [00:30<00:45,  3.32it/s, Loss=1.2649, ClsAcc=56.25%, DomainAcc=73.44%, LR=7.98e-04]
-Step 100/250:
-• Loss: 1.2649 (Cls: 0.6862, DA: 0.5787)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [1]:  40%|####      | 100/250 [00:58<00:45,  3.32it/s, Loss=1.0756, ClsAcc=78.12%, DomainAcc=62.50%, LR=7.57e-04]Epoch [1]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.0756, ClsAcc=78.12%, DomainAcc=62.50%, LR=7.57e-04]
-Step 200/250:
-• Loss: 1.0756 (Cls: 0.4624, DA: 0.6132)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [1]:  80%|########  | 200/250 [01:14<00:14,  3.41it/s, Loss=1.3989, ClsAcc=62.50%, DomainAcc=67.19%, LR=7.38e-04]Epoch [1]: |          | 300/? [01:14<00:00,  4.37it/s, Loss=1.3989, ClsAcc=62.50%, DomainAcc=67.19%, LR=7.38e-04]      
-Step 250/250:
-• Loss: 1.3989 (Cls: 0.7348, DA: 0.6641)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [1]: |          | 300/? [01:14<00:00,  4.05it/s, Loss=1.3989, ClsAcc=62.50%, DomainAcc=67.19%, LR=7.38e-04]
-Test:[0/7]	Time  0.326 ( 0.326)	Loss 3.8304e-01 (3.8304e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.000737787946466881
-Epoch [2]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [2]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.1422, ClsAcc=62.50%, DomainAcc=53.12%, LR=7.03e-04]Epoch [2]:  40%|####      | 100/250 [00:28<00:42,  3.49it/s, Loss=1.1422, ClsAcc=62.50%, DomainAcc=53.12%, LR=7.03e-04]
-Step 100/250:
-• Loss: 1.1422 (Cls: 0.4617, DA: 0.6805)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [2]:  40%|####      | 100/250 [00:58<00:42,  3.49it/s, Loss=1.1680, ClsAcc=81.25%, DomainAcc=57.81%, LR=6.72e-04]Epoch [2]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.1680, ClsAcc=81.25%, DomainAcc=57.81%, LR=6.72e-04]
-Step 200/250:
-• Loss: 1.1680 (Cls: 0.4884, DA: 0.6795)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [2]:  80%|########  | 200/250 [01:12<00:14,  3.41it/s, Loss=1.3346, ClsAcc=68.75%, DomainAcc=51.56%, LR=6.57e-04]Epoch [2]: |          | 300/? [01:12<00:00,  4.46it/s, Loss=1.3346, ClsAcc=68.75%, DomainAcc=51.56%, LR=6.57e-04]      
-Step 250/250:
-• Loss: 1.3346 (Cls: 0.6414, DA: 0.6932)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [2]: |          | 300/? [01:12<00:00,  4.13it/s, Loss=1.3346, ClsAcc=68.75%, DomainAcc=51.56%, LR=6.57e-04]
-Test:[0/7]	Time  0.326 ( 0.326)	Loss 5.3190e-01 (5.3190e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0006572361810832017
-Epoch [3]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [3]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.4839, ClsAcc=50.00%, DomainAcc=50.00%, LR=6.30e-04]Epoch [3]:  40%|####      | 100/250 [00:29<00:44,  3.40it/s, Loss=1.4839, ClsAcc=50.00%, DomainAcc=50.00%, LR=6.30e-04]
-Step 100/250:
-• Loss: 1.4839 (Cls: 0.7908, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [3]:  40%|####      | 100/250 [00:58<00:44,  3.40it/s, Loss=1.3500, ClsAcc=68.75%, DomainAcc=50.00%, LR=6.06e-04]Epoch [3]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.3500, ClsAcc=68.75%, DomainAcc=50.00%, LR=6.06e-04]
-Step 200/250:
-• Loss: 1.3500 (Cls: 0.6568, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [3]:  80%|########  | 200/250 [01:13<00:14,  3.41it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=5.95e-04]Epoch [3]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=5.95e-04]      
-Step 250/250:
-• Loss: 1.3146 (Cls: 0.6215, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [3]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=5.95e-04]
-Test:[0/7]	Time  0.323 ( 0.323)	Loss 4.0118e-01 (4.0118e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0005946035575013605
-Epoch [4]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [4]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.2662, ClsAcc=78.12%, DomainAcc=50.00%, LR=5.73e-04]Epoch [4]:  40%|####      | 100/250 [00:29<00:44,  3.39it/s, Loss=1.2662, ClsAcc=78.12%, DomainAcc=50.00%, LR=5.73e-04]
-Step 100/250:
-• Loss: 1.2662 (Cls: 0.5731, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [4]:  40%|####      | 100/250 [00:59<00:44,  3.39it/s, Loss=1.3196, ClsAcc=68.75%, DomainAcc=50.00%, LR=5.54e-04]Epoch [4]:  80%|########  | 200/250 [00:59<00:14,  3.35it/s, Loss=1.3196, ClsAcc=68.75%, DomainAcc=50.00%, LR=5.54e-04]
-Step 200/250:
-• Loss: 1.3196 (Cls: 0.6265, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [4]:  80%|########  | 200/250 [01:14<00:14,  3.35it/s, Loss=1.4282, ClsAcc=50.00%, DomainAcc=50.00%, LR=5.44e-04]Epoch [4]: |          | 300/? [01:14<00:00,  4.30it/s, Loss=1.4282, ClsAcc=50.00%, DomainAcc=50.00%, LR=5.44e-04]      
-Step 250/250:
-• Loss: 1.4282 (Cls: 0.7350, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [4]: |          | 300/? [01:14<00:00,  4.00it/s, Loss=1.4282, ClsAcc=50.00%, DomainAcc=50.00%, LR=5.44e-04]
-Test:[0/7]	Time  0.299 ( 0.299)	Loss 5.3794e-01 (5.3794e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0005443310539518174
-Epoch [5]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [5]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3614, ClsAcc=65.62%, DomainAcc=50.00%, LR=5.27e-04]Epoch [5]:  40%|####      | 100/250 [00:28<00:42,  3.53it/s, Loss=1.3614, ClsAcc=65.62%, DomainAcc=50.00%, LR=5.27e-04]
-Step 100/250:
-• Loss: 1.3614 (Cls: 0.6682, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [5]:  40%|####      | 100/250 [00:57<00:42,  3.53it/s, Loss=1.3693, ClsAcc=59.38%, DomainAcc=50.00%, LR=5.11e-04]Epoch [5]:  80%|########  | 200/250 [00:57<00:14,  3.45it/s, Loss=1.3693, ClsAcc=59.38%, DomainAcc=50.00%, LR=5.11e-04]
-Step 200/250:
-• Loss: 1.3693 (Cls: 0.6761, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [5]:  80%|########  | 200/250 [01:12<00:14,  3.45it/s, Loss=1.3816, ClsAcc=56.25%, DomainAcc=50.00%, LR=5.03e-04]Epoch [5]: |          | 300/? [01:12<00:00,  4.42it/s, Loss=1.3816, ClsAcc=56.25%, DomainAcc=50.00%, LR=5.03e-04]      
-Step 250/250:
-• Loss: 1.3816 (Cls: 0.6884, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [5]: |          | 300/? [01:12<00:00,  4.12it/s, Loss=1.3816, ClsAcc=56.25%, DomainAcc=50.00%, LR=5.03e-04]
-Test:[0/7]	Time  0.324 ( 0.324)	Loss 5.9738e-01 (5.9738e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0005029733718731742
-Epoch [6]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [6]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3621, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.88e-04]Epoch [6]:  40%|####      | 100/250 [00:29<00:44,  3.38it/s, Loss=1.3621, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.88e-04]
-Step 100/250:
-• Loss: 1.3621 (Cls: 0.6689, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [6]:  40%|####      | 100/250 [00:59<00:44,  3.38it/s, Loss=1.3729, ClsAcc=59.38%, DomainAcc=50.00%, LR=4.75e-04]Epoch [6]:  80%|########  | 200/250 [00:59<00:14,  3.36it/s, Loss=1.3729, ClsAcc=59.38%, DomainAcc=50.00%, LR=4.75e-04]
-Step 200/250:
-• Loss: 1.3729 (Cls: 0.6797, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [6]:  80%|########  | 200/250 [01:14<00:14,  3.36it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.68e-04]Epoch [6]: |          | 300/? [01:14<00:00,  4.36it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.68e-04]      
-Step 250/250:
-• Loss: 1.3547 (Cls: 0.6616, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [6]: |          | 300/? [01:14<00:00,  4.04it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.68e-04]
-Test:[0/7]	Time  0.304 ( 0.304)	Loss 4.9293e-01 (4.9293e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00046827446852752626
-Epoch [7]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [7]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3102, ClsAcc=75.00%, DomainAcc=50.00%, LR=4.56e-04]Epoch [7]:  40%|####      | 100/250 [00:28<00:43,  3.46it/s, Loss=1.3102, ClsAcc=75.00%, DomainAcc=50.00%, LR=4.56e-04]
-Step 100/250:
-• Loss: 1.3102 (Cls: 0.6170, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [7]:  40%|####      | 100/250 [00:59<00:43,  3.46it/s, Loss=1.2898, ClsAcc=71.88%, DomainAcc=50.00%, LR=4.44e-04]Epoch [7]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.2898, ClsAcc=71.88%, DomainAcc=50.00%, LR=4.44e-04]
-Step 200/250:
-• Loss: 1.2898 (Cls: 0.5966, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [7]:  80%|########  | 200/250 [01:13<00:14,  3.38it/s, Loss=1.4298, ClsAcc=56.25%, DomainAcc=50.00%, LR=4.39e-04]Epoch [7]: |          | 300/? [01:13<00:00,  4.41it/s, Loss=1.4298, ClsAcc=56.25%, DomainAcc=50.00%, LR=4.39e-04]      
-Step 250/250:
-• Loss: 1.4298 (Cls: 0.7366, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [7]: |          | 300/? [01:13<00:00,  4.08it/s, Loss=1.4298, ClsAcc=56.25%, DomainAcc=50.00%, LR=4.39e-04]
-Test:[0/7]	Time  0.293 ( 0.293)	Loss 4.2714e-01 (4.2714e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0004386913376508308
-Epoch [8]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [8]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.4112, ClsAcc=56.25%, DomainAcc=50.00%, LR=4.28e-04]Epoch [8]:  40%|####      | 100/250 [00:29<00:44,  3.34it/s, Loss=1.4112, ClsAcc=56.25%, DomainAcc=50.00%, LR=4.28e-04]
-Step 100/250:
-• Loss: 1.4112 (Cls: 0.7180, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [8]:  40%|####      | 100/250 [00:59<00:44,  3.34it/s, Loss=1.3565, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.18e-04]Epoch [8]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.3565, ClsAcc=62.50%, DomainAcc=50.00%, LR=4.18e-04]
-Step 200/250:
-• Loss: 1.3565 (Cls: 0.6634, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [8]:  80%|########  | 200/250 [01:14<00:14,  3.38it/s, Loss=1.4683, ClsAcc=53.12%, DomainAcc=50.00%, LR=4.13e-04]Epoch [8]: |          | 300/? [01:14<00:00,  4.34it/s, Loss=1.4683, ClsAcc=53.12%, DomainAcc=50.00%, LR=4.13e-04]      
-Step 250/250:
-• Loss: 1.4683 (Cls: 0.7751, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [8]: |          | 300/? [01:14<00:00,  4.02it/s, Loss=1.4683, ClsAcc=53.12%, DomainAcc=50.00%, LR=4.13e-04]
-Test:[0/7]	Time  0.307 ( 0.307)	Loss 4.3535e-01 (4.3535e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0004131307098896385
-Epoch [9]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [9]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3302, ClsAcc=68.75%, DomainAcc=50.00%, LR=4.04e-04]Epoch [9]:  40%|####      | 100/250 [00:29<00:44,  3.39it/s, Loss=1.3302, ClsAcc=68.75%, DomainAcc=50.00%, LR=4.04e-04]
-Step 100/250:
-• Loss: 1.3302 (Cls: 0.6370, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [9]:  40%|####      | 100/250 [00:59<00:44,  3.39it/s, Loss=1.2722, ClsAcc=81.25%, DomainAcc=50.00%, LR=3.95e-04]Epoch [9]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.2722, ClsAcc=81.25%, DomainAcc=50.00%, LR=3.95e-04]
-Step 200/250:
-• Loss: 1.2722 (Cls: 0.5791, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [9]:  80%|########  | 200/250 [01:13<00:14,  3.38it/s, Loss=1.3283, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.91e-04]Epoch [9]: |          | 300/? [01:13<00:00,  4.41it/s, Loss=1.3283, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.91e-04]      
-Step 250/250:
-• Loss: 1.3283 (Cls: 0.6352, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [9]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.3283, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.91e-04]
-Test:[0/7]	Time  0.320 ( 0.320)	Loss 4.5771e-01 (4.5771e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00039079497139068016
-Epoch [10]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [10]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3041, ClsAcc=71.88%, DomainAcc=50.00%, LR=3.83e-04]Epoch [10]:  40%|####      | 100/250 [00:29<00:43,  3.43it/s, Loss=1.3041, ClsAcc=71.88%, DomainAcc=50.00%, LR=3.83e-04]
-Step 100/250:
-• Loss: 1.3041 (Cls: 0.6109, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [10]:  40%|####      | 100/250 [00:59<00:43,  3.43it/s, Loss=1.3844, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.75e-04]Epoch [10]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.3844, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.75e-04]
-Step 200/250:
-• Loss: 1.3844 (Cls: 0.6912, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [10]:  80%|########  | 200/250 [01:13<00:14,  3.38it/s, Loss=1.3687, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.71e-04]Epoch [10]: |          | 300/? [01:13<00:00,  4.42it/s, Loss=1.3687, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.71e-04]      
-Step 250/250:
-• Loss: 1.3687 (Cls: 0.6755, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [10]: |          | 300/? [01:13<00:00,  4.09it/s, Loss=1.3687, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.71e-04]
-Test:[0/7]	Time  0.309 ( 0.309)	Loss 5.5636e-01 (5.5636e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0003710876911618321
-Epoch [11]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [11]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3159, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.64e-04]Epoch [11]:  40%|####      | 100/250 [00:29<00:44,  3.41it/s, Loss=1.3159, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.64e-04]
-Step 100/250:
-• Loss: 1.3159 (Cls: 0.6228, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [11]:  40%|####      | 100/250 [00:59<00:44,  3.41it/s, Loss=1.3771, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.57e-04]Epoch [11]:  80%|########  | 200/250 [00:59<00:14,  3.36it/s, Loss=1.3771, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.57e-04]
-Step 200/250:
-• Loss: 1.3771 (Cls: 0.6839, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [11]:  80%|########  | 200/250 [01:14<00:14,  3.36it/s, Loss=1.3162, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.54e-04]Epoch [11]: |          | 300/? [01:14<00:00,  4.35it/s, Loss=1.3162, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.54e-04]      
-Step 250/250:
-• Loss: 1.3162 (Cls: 0.6230, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [11]: |          | 300/? [01:14<00:00,  4.03it/s, Loss=1.3162, ClsAcc=68.75%, DomainAcc=50.00%, LR=3.54e-04]
-Test:[0/7]	Time  0.325 ( 0.325)	Loss 3.4624e-01 (3.4624e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0003535533905932738
-Epoch [12]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [12]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3881, ClsAcc=21.88%, DomainAcc=50.00%, LR=3.47e-04]Epoch [12]:  40%|####      | 100/250 [00:28<00:43,  3.47it/s, Loss=1.3881, ClsAcc=21.88%, DomainAcc=50.00%, LR=3.47e-04]
-Step 100/250:
-• Loss: 1.3881 (Cls: 0.6950, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [12]:  40%|####      | 100/250 [00:59<00:43,  3.47it/s, Loss=1.3686, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.41e-04]Epoch [12]:  80%|########  | 200/250 [00:59<00:14,  3.36it/s, Loss=1.3686, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.41e-04]
-Step 200/250:
-• Loss: 1.3686 (Cls: 0.6755, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [12]:  80%|########  | 200/250 [01:13<00:14,  3.36it/s, Loss=1.2392, ClsAcc=81.25%, DomainAcc=50.00%, LR=3.38e-04]Epoch [12]: |          | 300/? [01:13<00:00,  4.37it/s, Loss=1.2392, ClsAcc=81.25%, DomainAcc=50.00%, LR=3.38e-04]      
-Step 250/250:
-• Loss: 1.2392 (Cls: 0.5460, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [12]: |          | 300/? [01:13<00:00,  4.06it/s, Loss=1.2392, ClsAcc=81.25%, DomainAcc=50.00%, LR=3.38e-04]
-Test:[0/7]	Time  0.327 ( 0.327)	Loss 4.0849e-01 (4.0849e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0003378378483559883
-Epoch [13]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [13]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.2616, ClsAcc=75.00%, DomainAcc=50.00%, LR=3.32e-04]Epoch [13]:  40%|####      | 100/250 [00:28<00:43,  3.45it/s, Loss=1.2616, ClsAcc=75.00%, DomainAcc=50.00%, LR=3.32e-04]
-Step 100/250:
-• Loss: 1.2616 (Cls: 0.5685, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [13]:  40%|####      | 100/250 [00:57<00:43,  3.45it/s, Loss=1.2303, ClsAcc=78.12%, DomainAcc=50.00%, LR=3.26e-04]Epoch [13]:  80%|########  | 200/250 [00:57<00:14,  3.45it/s, Loss=1.2303, ClsAcc=78.12%, DomainAcc=50.00%, LR=3.26e-04]
-Step 200/250:
-• Loss: 1.2303 (Cls: 0.5372, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [13]:  80%|########  | 200/250 [01:13<00:14,  3.45it/s, Loss=1.3682, ClsAcc=65.62%, DomainAcc=50.00%, LR=3.24e-04]Epoch [13]: |          | 300/? [01:13<00:00,  4.41it/s, Loss=1.3682, ClsAcc=65.62%, DomainAcc=50.00%, LR=3.24e-04]      
-Step 250/250:
-• Loss: 1.3682 (Cls: 0.6751, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [13]: |          | 300/? [01:13<00:00,  4.10it/s, Loss=1.3682, ClsAcc=65.62%, DomainAcc=50.00%, LR=3.24e-04]
-Test:[0/7]	Time  0.305 ( 0.305)	Loss 5.8070e-01 (5.8070e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00032366118113821564
-Epoch [14]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [14]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3280, ClsAcc=71.88%, DomainAcc=50.00%, LR=3.18e-04]Epoch [14]:  40%|####      | 100/250 [00:29<00:43,  3.42it/s, Loss=1.3280, ClsAcc=71.88%, DomainAcc=50.00%, LR=3.18e-04]
-Step 100/250:
-• Loss: 1.3280 (Cls: 0.6348, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [14]:  40%|####      | 100/250 [00:58<00:43,  3.42it/s, Loss=1.3491, ClsAcc=65.62%, DomainAcc=50.00%, LR=3.13e-04]Epoch [14]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.3491, ClsAcc=65.62%, DomainAcc=50.00%, LR=3.13e-04]
-Step 200/250:
-• Loss: 1.3491 (Cls: 0.6560, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [14]:  80%|########  | 200/250 [01:13<00:14,  3.41it/s, Loss=1.3802, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.11e-04]Epoch [14]: |          | 300/? [01:13<00:00,  4.37it/s, Loss=1.3802, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.11e-04]      
-Step 250/250:
-• Loss: 1.3802 (Cls: 0.6870, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [14]: |          | 300/? [01:13<00:00,  4.06it/s, Loss=1.3802, ClsAcc=59.38%, DomainAcc=50.00%, LR=3.11e-04]
-Test:[0/7]	Time  0.311 ( 0.311)	Loss 4.8016e-01 (4.8016e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.000310799128814441
-Epoch [15]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [15]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.2825, ClsAcc=78.12%, DomainAcc=50.00%, LR=3.06e-04]Epoch [15]:  40%|####      | 100/250 [00:29<00:43,  3.43it/s, Loss=1.2825, ClsAcc=78.12%, DomainAcc=50.00%, LR=3.06e-04]
-Step 100/250:
-• Loss: 1.2825 (Cls: 0.5893, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [15]:  40%|####      | 100/250 [00:59<00:43,  3.43it/s, Loss=1.3588, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.01e-04]Epoch [15]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.3588, ClsAcc=62.50%, DomainAcc=50.00%, LR=3.01e-04]
-Step 200/250:
-• Loss: 1.3588 (Cls: 0.6657, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [15]:  80%|########  | 200/250 [01:13<00:14,  3.37it/s, Loss=1.3366, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.99e-04]Epoch [15]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3366, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.99e-04]      
-Step 250/250:
-• Loss: 1.3366 (Cls: 0.6435, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [15]: |          | 300/? [01:13<00:00,  4.06it/s, Loss=1.3366, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.99e-04]
-Test:[0/7]	Time  0.287 ( 0.287)	Loss 4.3149e-01 (4.3149e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0002990697562442441
-Epoch [16]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [16]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.95e-04]Epoch [16]:  40%|####      | 100/250 [00:29<00:43,  3.41it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.95e-04]
-Step 100/250:
-• Loss: 1.3547 (Cls: 0.6616, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [16]:  40%|####      | 100/250 [00:58<00:43,  3.41it/s, Loss=1.2932, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.90e-04]Epoch [16]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.2932, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.90e-04]
-Step 200/250:
-• Loss: 1.2932 (Cls: 0.6000, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [16]:  80%|########  | 200/250 [01:13<00:14,  3.41it/s, Loss=1.2298, ClsAcc=81.25%, DomainAcc=50.00%, LR=2.88e-04]Epoch [16]: |          | 300/? [01:13<00:00,  4.38it/s, Loss=1.2298, ClsAcc=81.25%, DomainAcc=50.00%, LR=2.88e-04]      
-Step 250/250:
-• Loss: 1.2298 (Cls: 0.5367, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [16]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.2298, ClsAcc=81.25%, DomainAcc=50.00%, LR=2.88e-04]
-Test:[0/7]	Time  0.302 ( 0.302)	Loss 3.7417e-01 (3.7417e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00028832381943191343
-Epoch [17]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [17]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3574, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.84e-04]Epoch [17]:  40%|####      | 100/250 [00:29<00:44,  3.41it/s, Loss=1.3574, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.84e-04]
-Step 100/250:
-• Loss: 1.3574 (Cls: 0.6643, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [17]:  40%|####      | 100/250 [00:59<00:44,  3.41it/s, Loss=1.4135, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.80e-04]Epoch [17]:  80%|########  | 200/250 [00:59<00:14,  3.36it/s, Loss=1.4135, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.80e-04]
-Step 200/250:
-• Loss: 1.4135 (Cls: 0.7204, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [17]:  80%|########  | 200/250 [01:14<00:14,  3.36it/s, Loss=1.3875, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.78e-04]Epoch [17]: |          | 300/? [01:14<00:00,  4.33it/s, Loss=1.3875, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.78e-04]      
-Step 250/250:
-• Loss: 1.3875 (Cls: 0.6943, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [17]: |          | 300/? [01:14<00:00,  4.03it/s, Loss=1.3875, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.78e-04]
-Test:[0/7]	Time  0.316 ( 0.316)	Loss 5.3133e-01 (5.3133e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.000278437664873526
-Epoch [18]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [18]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3785, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.75e-04]Epoch [18]:  40%|####      | 100/250 [00:28<00:43,  3.46it/s, Loss=1.3785, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.75e-04]
-Step 100/250:
-• Loss: 1.3785 (Cls: 0.6853, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [18]:  40%|####      | 100/250 [00:59<00:43,  3.46it/s, Loss=1.2987, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.71e-04]Epoch [18]:  80%|########  | 200/250 [00:59<00:14,  3.34it/s, Loss=1.2987, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.71e-04]
-Step 200/250:
-• Loss: 1.2987 (Cls: 0.6056, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [18]:  80%|########  | 200/250 [01:13<00:14,  3.34it/s, Loss=1.3360, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.69e-04]Epoch [18]: |          | 300/? [01:13<00:00,  4.38it/s, Loss=1.3360, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.69e-04]      
-Step 250/250:
-• Loss: 1.3360 (Cls: 0.6429, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [18]: |          | 300/? [01:13<00:00,  4.06it/s, Loss=1.3360, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.69e-04]
-Test:[0/7]	Time  0.319 ( 0.319)	Loss 5.4081e-01 (5.4081e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.000269307914320215
-Epoch [19]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [19]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3421, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.66e-04]Epoch [19]:  40%|####      | 100/250 [00:29<00:44,  3.36it/s, Loss=1.3421, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.66e-04]
-Step 100/250:
-• Loss: 1.3421 (Cls: 0.6489, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [19]:  40%|####      | 100/250 [00:58<00:44,  3.36it/s, Loss=1.3374, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.62e-04]Epoch [19]:  80%|########  | 200/250 [00:58<00:14,  3.40it/s, Loss=1.3374, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.62e-04]
-Step 200/250:
-• Loss: 1.3374 (Cls: 0.6443, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [19]:  80%|########  | 200/250 [01:14<00:14,  3.40it/s, Loss=1.3251, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.61e-04]Epoch [19]: |          | 300/? [01:14<00:00,  4.34it/s, Loss=1.3251, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.61e-04]      
-Step 250/250:
-• Loss: 1.3251 (Cls: 0.6319, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [19]: |          | 300/? [01:14<00:00,  4.03it/s, Loss=1.3251, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.61e-04]
-Test:[0/7]	Time  0.303 ( 0.303)	Loss 4.8852e-01 (4.8852e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00026084743001221456
-Epoch [20]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [20]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3040, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.58e-04]Epoch [20]:  40%|####      | 100/250 [00:28<00:43,  3.47it/s, Loss=1.3040, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.58e-04]
-Step 100/250:
-• Loss: 1.3040 (Cls: 0.6109, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [20]:  40%|####      | 100/250 [00:59<00:43,  3.47it/s, Loss=1.2902, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.55e-04]Epoch [20]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.2902, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.55e-04]
-Step 200/250:
-• Loss: 1.2902 (Cls: 0.5970, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [20]:  80%|########  | 200/250 [01:14<00:14,  3.37it/s, Loss=1.3367, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.53e-04]Epoch [20]: |          | 300/? [01:14<00:00,  4.36it/s, Loss=1.3367, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.53e-04]      
-Step 250/250:
-• Loss: 1.3367 (Cls: 0.6435, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [20]: |          | 300/? [01:14<00:00,  4.05it/s, Loss=1.3367, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.53e-04]
-Test:[0/7]	Time  0.330 ( 0.330)	Loss 4.4946e-01 (4.4946e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00025298221281347036
-Epoch [21]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [21]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.2776, ClsAcc=78.12%, DomainAcc=50.00%, LR=2.50e-04]Epoch [21]:  40%|####      | 100/250 [00:28<00:43,  3.45it/s, Loss=1.2776, ClsAcc=78.12%, DomainAcc=50.00%, LR=2.50e-04]
-Step 100/250:
-• Loss: 1.2776 (Cls: 0.5845, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [21]:  40%|####      | 100/250 [00:59<00:43,  3.45it/s, Loss=1.3851, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.47e-04]Epoch [21]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.3851, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.47e-04]
-Step 200/250:
-• Loss: 1.3851 (Cls: 0.6920, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [21]:  80%|########  | 200/250 [01:14<00:14,  3.37it/s, Loss=1.3150, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.46e-04]Epoch [21]: |          | 300/? [01:14<00:00,  4.36it/s, Loss=1.3150, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.46e-04]      
-Step 250/250:
-• Loss: 1.3150 (Cls: 0.6219, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [21]: |          | 300/? [01:14<00:00,  4.05it/s, Loss=1.3150, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.46e-04]
-Test:[0/7]	Time  0.304 ( 0.304)	Loss 4.0551e-01 (4.0551e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0002456489898134416
-Epoch [22]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [22]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.4913, ClsAcc=46.88%, DomainAcc=50.00%, LR=2.43e-04]Epoch [22]:  40%|####      | 100/250 [00:29<00:44,  3.36it/s, Loss=1.4913, ClsAcc=46.88%, DomainAcc=50.00%, LR=2.43e-04]
-Step 100/250:
-• Loss: 1.4913 (Cls: 0.7981, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [22]:  40%|####      | 100/250 [00:59<00:44,  3.36it/s, Loss=1.2630, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.40e-04]Epoch [22]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.2630, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.40e-04]
-Step 200/250:
-• Loss: 1.2630 (Cls: 0.5699, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [22]:  80%|########  | 200/250 [01:14<00:14,  3.38it/s, Loss=1.2967, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.39e-04]Epoch [22]: |          | 300/? [01:14<00:00,  4.33it/s, Loss=1.2967, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.39e-04]      
-Step 250/250:
-• Loss: 1.2967 (Cls: 0.6035, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [22]: |          | 300/? [01:14<00:00,  4.02it/s, Loss=1.2967, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.39e-04]
-Test:[0/7]	Time  0.300 ( 0.300)	Loss 4.5601e-01 (4.5601e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00023879331818300932
-Epoch [23]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [23]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3778, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.36e-04]Epoch [23]:  40%|####      | 100/250 [00:28<00:43,  3.47it/s, Loss=1.3778, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.36e-04]
-Step 100/250:
-• Loss: 1.3778 (Cls: 0.6846, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [23]:  40%|####      | 100/250 [00:59<00:43,  3.47it/s, Loss=1.4009, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.34e-04]Epoch [23]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.4009, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.34e-04]
-Step 200/250:
-• Loss: 1.4009 (Cls: 0.7078, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [23]:  80%|########  | 200/250 [01:13<00:14,  3.37it/s, Loss=1.4110, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.32e-04]Epoch [23]: |          | 300/? [01:13<00:00,  4.43it/s, Loss=1.4110, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.32e-04]      
-Step 250/250:
-• Loss: 1.4110 (Cls: 0.7179, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [23]: |          | 300/? [01:13<00:00,  4.10it/s, Loss=1.4110, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.32e-04]
-Test:[0/7]	Time  0.321 ( 0.321)	Loss 4.2499e-01 (4.2499e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00023236808024254082
-Epoch [24]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [24]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.3457, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.30e-04]Epoch [24]:  40%|####      | 100/250 [00:30<00:45,  3.27it/s, Loss=1.3457, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.30e-04]
-Step 100/250:
-• Loss: 1.3457 (Cls: 0.6526, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [24]:  40%|####      | 100/250 [01:00<00:45,  3.27it/s, Loss=1.3367, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.28e-04]Epoch [24]:  80%|########  | 200/250 [01:00<00:14,  3.34it/s, Loss=1.3367, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.28e-04]
-Step 200/250:
-• Loss: 1.3367 (Cls: 0.6436, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [24]:  80%|########  | 200/250 [01:15<00:14,  3.34it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.26e-04]Epoch [24]: |          | 300/? [01:15<00:00,  4.31it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.26e-04]      
-Step 250/250:
-• Loss: 1.3146 (Cls: 0.6214, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [24]: |          | 300/? [01:15<00:00,  3.99it/s, Loss=1.3146, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.26e-04]
-Test:[0/7]	Time  0.298 ( 0.298)	Loss 3.7176e-01 (3.7176e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00022633227826974423
-Epoch [25]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [25]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.2599, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.24e-04]Epoch [25]:  40%|####      | 100/250 [00:28<00:43,  3.46it/s, Loss=1.2599, ClsAcc=75.00%, DomainAcc=50.00%, LR=2.24e-04]
-Step 100/250:
-• Loss: 1.2599 (Cls: 0.5668, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [25]:  40%|####      | 100/250 [00:58<00:43,  3.46it/s, Loss=1.4317, ClsAcc=53.12%, DomainAcc=50.00%, LR=2.22e-04]Epoch [25]:  80%|########  | 200/250 [00:58<00:14,  3.40it/s, Loss=1.4317, ClsAcc=53.12%, DomainAcc=50.00%, LR=2.22e-04]
-Step 200/250:
-• Loss: 1.4317 (Cls: 0.7385, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [25]:  80%|########  | 200/250 [01:14<00:14,  3.40it/s, Loss=1.3460, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.21e-04]Epoch [25]: |          | 300/? [01:14<00:00,  4.34it/s, Loss=1.3460, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.21e-04]      
-Step 250/250:
-• Loss: 1.3460 (Cls: 0.6528, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [25]: |          | 300/? [01:14<00:00,  4.05it/s, Loss=1.3460, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.21e-04]
-Test:[0/7]	Time  0.304 ( 0.304)	Loss 4.8713e-01 (4.8713e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00022065006130979155
-Epoch [26]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [26]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3392, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.18e-04]Epoch [26]:  40%|####      | 100/250 [00:28<00:43,  3.48it/s, Loss=1.3392, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.18e-04]
-Step 100/250:
-• Loss: 1.3392 (Cls: 0.6460, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [26]:  40%|####      | 100/250 [00:58<00:43,  3.48it/s, Loss=1.2804, ClsAcc=78.12%, DomainAcc=50.00%, LR=2.16e-04]Epoch [26]:  80%|########  | 200/250 [00:58<00:14,  3.40it/s, Loss=1.2804, ClsAcc=78.12%, DomainAcc=50.00%, LR=2.16e-04]
-Step 200/250:
-• Loss: 1.2804 (Cls: 0.5872, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [26]:  80%|########  | 200/250 [01:13<00:14,  3.40it/s, Loss=1.3169, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.15e-04]Epoch [26]: |          | 300/? [01:13<00:00,  4.42it/s, Loss=1.3169, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.15e-04]      
-Step 250/250:
-• Loss: 1.3169 (Cls: 0.6238, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [26]: |          | 300/? [01:13<00:00,  4.10it/s, Loss=1.3169, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.15e-04]
-Test:[0/7]	Time  0.320 ( 0.320)	Loss 3.4592e-01 (3.4592e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0002152899332568719
-Epoch [27]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [27]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.3438, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.13e-04]Epoch [27]:  40%|####      | 100/250 [00:30<00:45,  3.31it/s, Loss=1.3438, ClsAcc=68.75%, DomainAcc=50.00%, LR=2.13e-04]
-Step 100/250:
-• Loss: 1.3438 (Cls: 0.6507, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [27]:  40%|####      | 100/250 [00:59<00:45,  3.31it/s, Loss=1.4020, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.11e-04]Epoch [27]:  80%|########  | 200/250 [00:59<00:14,  3.36it/s, Loss=1.4020, ClsAcc=56.25%, DomainAcc=50.00%, LR=2.11e-04]
-Step 200/250:
-• Loss: 1.4020 (Cls: 0.7088, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [27]:  80%|########  | 200/250 [01:14<00:14,  3.36it/s, Loss=1.3769, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.10e-04]Epoch [27]: |          | 300/? [01:14<00:00,  4.36it/s, Loss=1.3769, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.10e-04]      
-Step 250/250:
-• Loss: 1.3769 (Cls: 0.6838, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [27]: |          | 300/? [01:14<00:00,  4.03it/s, Loss=1.3769, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.10e-04]
-Test:[0/7]	Time  0.317 ( 0.317)	Loss 4.6389e-01 (4.6389e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00021022410381342862
-Epoch [28]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [28]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.2886, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.08e-04]Epoch [28]:  40%|####      | 100/250 [00:28<00:43,  3.48it/s, Loss=1.2886, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.08e-04]
-Step 100/250:
-• Loss: 1.2886 (Cls: 0.5955, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [28]:  40%|####      | 100/250 [00:58<00:43,  3.48it/s, Loss=1.3848, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.06e-04]Epoch [28]:  80%|########  | 200/250 [00:58<00:14,  3.43it/s, Loss=1.3848, ClsAcc=59.38%, DomainAcc=50.00%, LR=2.06e-04]
-Step 200/250:
-• Loss: 1.3848 (Cls: 0.6917, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [28]:  80%|########  | 200/250 [01:12<00:14,  3.43it/s, Loss=1.3627, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.05e-04]Epoch [28]: |          | 300/? [01:12<00:00,  4.44it/s, Loss=1.3627, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.05e-04]      
-Step 250/250:
-• Loss: 1.3627 (Cls: 0.6696, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [28]: |          | 300/? [01:12<00:00,  4.12it/s, Loss=1.3627, ClsAcc=62.50%, DomainAcc=50.00%, LR=2.05e-04]
-Test:[0/7]	Time  0.281 ( 0.281)	Loss 4.0201e-01 (4.0201e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00020542795298607238
-Epoch [29]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [29]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.3371, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.04e-04]Epoch [29]:  40%|####      | 100/250 [00:30<00:45,  3.31it/s, Loss=1.3371, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.04e-04]
-Step 100/250:
-• Loss: 1.3371 (Cls: 0.6440, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [29]:  40%|####      | 100/250 [00:59<00:45,  3.31it/s, Loss=1.2945, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.02e-04]Epoch [29]:  80%|########  | 200/250 [00:59<00:14,  3.35it/s, Loss=1.2945, ClsAcc=71.88%, DomainAcc=50.00%, LR=2.02e-04]
-Step 200/250:
-• Loss: 1.2945 (Cls: 0.6014, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [29]:  80%|########  | 200/250 [01:15<00:14,  3.35it/s, Loss=1.3450, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.01e-04]Epoch [29]: |          | 300/? [01:15<00:00,  4.30it/s, Loss=1.3450, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.01e-04]      
-Step 250/250:
-• Loss: 1.3450 (Cls: 0.6519, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [29]: |          | 300/? [01:15<00:00,  3.99it/s, Loss=1.3450, ClsAcc=65.62%, DomainAcc=50.00%, LR=2.01e-04]
-Test:[0/7]	Time  0.299 ( 0.299)	Loss 3.5047e-01 (3.5047e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0002008795864910758
-Epoch [30]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [30]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3554, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.99e-04]Epoch [30]:  40%|####      | 100/250 [00:29<00:44,  3.36it/s, Loss=1.3554, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.99e-04]
-Step 100/250:
-• Loss: 1.3554 (Cls: 0.6623, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [30]:  40%|####      | 100/250 [00:59<00:44,  3.36it/s, Loss=1.3763, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.97e-04]Epoch [30]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.3763, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.97e-04]
-Step 200/250:
-• Loss: 1.3763 (Cls: 0.6832, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [30]:  80%|########  | 200/250 [01:14<00:14,  3.37it/s, Loss=1.4553, ClsAcc=53.12%, DomainAcc=50.00%, LR=1.97e-04]Epoch [30]: |          | 300/? [01:14<00:00,  4.34it/s, Loss=1.4553, ClsAcc=53.12%, DomainAcc=50.00%, LR=1.97e-04]      
-Step 250/250:
-• Loss: 1.4553 (Cls: 0.7621, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [30]: |          | 300/? [01:14<00:00,  4.03it/s, Loss=1.4553, ClsAcc=53.12%, DomainAcc=50.00%, LR=1.97e-04]
-Test:[0/7]	Time  0.328 ( 0.328)	Loss 3.9031e-01 (3.9031e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.000196559464471451
-Epoch [31]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [31]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3552, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.95e-04]Epoch [31]:  40%|####      | 100/250 [00:29<00:43,  3.42it/s, Loss=1.3552, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.95e-04]
-Step 100/250:
-• Loss: 1.3552 (Cls: 0.6620, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [31]:  40%|####      | 100/250 [00:58<00:43,  3.42it/s, Loss=1.3155, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.93e-04]Epoch [31]:  80%|########  | 200/250 [00:58<00:14,  3.39it/s, Loss=1.3155, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.93e-04]
-Step 200/250:
-• Loss: 1.3155 (Cls: 0.6223, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [31]:  80%|########  | 200/250 [01:13<00:14,  3.39it/s, Loss=1.3724, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.92e-04]Epoch [31]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3724, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.92e-04]      
-Step 250/250:
-• Loss: 1.3724 (Cls: 0.6793, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [31]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.3724, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.92e-04]
-Test:[0/7]	Time  0.310 ( 0.310)	Loss 4.6324e-01 (4.6324e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00019245008972987527
-Epoch [32]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [32]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.4252, ClsAcc=50.00%, DomainAcc=50.00%, LR=1.91e-04]Epoch [32]:  40%|####      | 100/250 [00:29<00:44,  3.37it/s, Loss=1.4252, ClsAcc=50.00%, DomainAcc=50.00%, LR=1.91e-04]
-Step 100/250:
-• Loss: 1.4252 (Cls: 0.7321, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [32]:  40%|####      | 100/250 [00:59<00:44,  3.37it/s, Loss=1.4076, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.89e-04]Epoch [32]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.4076, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.89e-04]
-Step 200/250:
-• Loss: 1.4076 (Cls: 0.7144, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [32]:  80%|########  | 200/250 [01:13<00:14,  3.38it/s, Loss=1.3554, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.89e-04]Epoch [32]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3554, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.89e-04]      
-Step 250/250:
-• Loss: 1.3554 (Cls: 0.6623, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [32]: |          | 300/? [01:13<00:00,  4.06it/s, Loss=1.3554, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.89e-04]
-Test:[0/7]	Time  0.308 ( 0.308)	Loss 4.6222e-01 (4.6222e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0001885357445816101
-Epoch [33]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [33]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3551, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.87e-04]Epoch [33]:  40%|####      | 100/250 [00:28<00:43,  3.48it/s, Loss=1.3551, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.87e-04]
-Step 100/250:
-• Loss: 1.3551 (Cls: 0.6620, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [33]:  40%|####      | 100/250 [00:58<00:43,  3.48it/s, Loss=1.4146, ClsAcc=50.00%, DomainAcc=50.00%, LR=1.86e-04]Epoch [33]:  80%|########  | 200/250 [00:58<00:14,  3.41it/s, Loss=1.4146, ClsAcc=50.00%, DomainAcc=50.00%, LR=1.86e-04]
-Step 200/250:
-• Loss: 1.4146 (Cls: 0.7214, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [33]:  80%|########  | 200/250 [01:13<00:14,  3.41it/s, Loss=1.3688, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.85e-04]Epoch [33]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3688, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.85e-04]      
-Step 250/250:
-• Loss: 1.3688 (Cls: 0.6756, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [33]: |          | 300/? [01:13<00:00,  4.08it/s, Loss=1.3688, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.85e-04]
-Test:[0/7]	Time  0.305 ( 0.305)	Loss 5.2439e-01 (5.2439e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00018480226766139023
-Epoch [34]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [34]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3565, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.83e-04]Epoch [34]:  40%|####      | 100/250 [00:28<00:43,  3.47it/s, Loss=1.3565, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.83e-04]
-Step 100/250:
-• Loss: 1.3565 (Cls: 0.6633, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [34]:  40%|####      | 100/250 [00:58<00:43,  3.47it/s, Loss=1.4124, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.82e-04]Epoch [34]:  80%|########  | 200/250 [00:58<00:14,  3.42it/s, Loss=1.4124, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.82e-04]
-Step 200/250:
-• Loss: 1.4124 (Cls: 0.7192, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [34]:  80%|########  | 200/250 [01:13<00:14,  3.42it/s, Loss=1.3666, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.81e-04]Epoch [34]: |          | 300/? [01:13<00:00,  4.42it/s, Loss=1.3666, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.81e-04]      
-Step 250/250:
-• Loss: 1.3666 (Cls: 0.6735, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [34]: |          | 300/? [01:13<00:00,  4.11it/s, Loss=1.3666, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.81e-04]
-Test:[0/7]	Time  0.324 ( 0.324)	Loss 3.8399e-01 (3.8399e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00018123686374612284
-Epoch [35]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [35]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3171, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.80e-04]Epoch [35]:  40%|####      | 100/250 [00:29<00:44,  3.34it/s, Loss=1.3171, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.80e-04]
-Step 100/250:
-• Loss: 1.3171 (Cls: 0.6239, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [35]:  40%|####      | 100/250 [00:59<00:44,  3.34it/s, Loss=1.3269, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.78e-04]Epoch [35]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.3269, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.78e-04]
-Step 200/250:
-• Loss: 1.3269 (Cls: 0.6337, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [35]:  80%|########  | 200/250 [01:14<00:14,  3.37it/s, Loss=1.2491, ClsAcc=81.25%, DomainAcc=50.00%, LR=1.78e-04]Epoch [35]: |          | 300/? [01:14<00:00,  4.37it/s, Loss=1.2491, ClsAcc=81.25%, DomainAcc=50.00%, LR=1.78e-04]      
-Step 250/250:
-• Loss: 1.2491 (Cls: 0.5559, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [35]: |          | 300/? [01:14<00:00,  4.04it/s, Loss=1.2491, ClsAcc=81.25%, DomainAcc=50.00%, LR=1.78e-04]
-Test:[0/7]	Time  0.300 ( 0.300)	Loss 4.3915e-01 (4.3915e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0001778279410038923
-Epoch [36]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [36]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3760, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.77e-04]Epoch [36]:  40%|####      | 100/250 [00:29<00:44,  3.34it/s, Loss=1.3760, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.77e-04]
-Step 100/250:
-• Loss: 1.3760 (Cls: 0.6828, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [36]:  40%|####      | 100/250 [01:01<00:44,  3.34it/s, Loss=1.3679, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.75e-04]Epoch [36]:  80%|########  | 200/250 [01:01<00:15,  3.25it/s, Loss=1.3679, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.75e-04]
-Step 200/250:
-• Loss: 1.3679 (Cls: 0.6748, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [36]:  80%|########  | 200/250 [01:15<00:15,  3.25it/s, Loss=1.3147, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.75e-04]Epoch [36]: |          | 300/? [01:15<00:00,  4.31it/s, Loss=1.3147, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.75e-04]      
-Step 250/250:
-• Loss: 1.3147 (Cls: 0.6216, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [36]: |          | 300/? [01:15<00:00,  3.97it/s, Loss=1.3147, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.75e-04]
-Test:[0/7]	Time  0.283 ( 0.283)	Loss 3.7087e-01 (3.7087e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00017456497113967713
-Epoch [37]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [37]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.3689, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.73e-04]Epoch [37]:  40%|####      | 100/250 [00:30<00:45,  3.31it/s, Loss=1.3689, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.73e-04]
-Step 100/250:
-• Loss: 1.3689 (Cls: 0.6758, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [37]:  40%|####      | 100/250 [00:59<00:45,  3.31it/s, Loss=1.2613, ClsAcc=78.12%, DomainAcc=50.00%, LR=1.72e-04]Epoch [37]:  80%|########  | 200/250 [00:59<00:14,  3.38it/s, Loss=1.2613, ClsAcc=78.12%, DomainAcc=50.00%, LR=1.72e-04]
-Step 200/250:
-• Loss: 1.2613 (Cls: 0.5681, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [37]:  80%|########  | 200/250 [01:14<00:14,  3.38it/s, Loss=1.3441, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.71e-04]Epoch [37]: |          | 300/? [01:14<00:00,  4.38it/s, Loss=1.3441, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.71e-04]      
-Step 250/250:
-• Loss: 1.3441 (Cls: 0.6509, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [37]: |          | 300/? [01:14<00:00,  4.05it/s, Loss=1.3441, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.71e-04]
-Test:[0/7]	Time  0.304 ( 0.304)	Loss 5.3299e-01 (5.3299e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00017143836874659562
-Epoch [38]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [38]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3233, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.70e-04]Epoch [38]:  40%|####      | 100/250 [00:29<00:44,  3.37it/s, Loss=1.3233, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.70e-04]
-Step 100/250:
-• Loss: 1.3233 (Cls: 0.6302, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [38]:  40%|####      | 100/250 [00:59<00:44,  3.37it/s, Loss=1.3906, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.69e-04]Epoch [38]:  80%|########  | 200/250 [00:59<00:14,  3.39it/s, Loss=1.3906, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.69e-04]
-Step 200/250:
-• Loss: 1.3906 (Cls: 0.6975, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [38]:  80%|########  | 200/250 [01:14<00:14,  3.39it/s, Loss=1.3164, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.68e-04]Epoch [38]: |          | 300/? [01:14<00:00,  4.35it/s, Loss=1.3164, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.68e-04]      
-Step 250/250:
-• Loss: 1.3164 (Cls: 0.6233, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [38]: |          | 300/? [01:14<00:00,  4.04it/s, Loss=1.3164, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.68e-04]
-Test:[0/7]	Time  0.329 ( 0.329)	Loss 3.4288e-01 (3.4288e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00016843938683877986
-Epoch [39]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [39]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3689, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.67e-04]Epoch [39]:  40%|####      | 100/250 [00:28<00:43,  3.45it/s, Loss=1.3689, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.67e-04]
-Step 100/250:
-• Loss: 1.3689 (Cls: 0.6758, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [39]:  40%|####      | 100/250 [00:59<00:43,  3.45it/s, Loss=1.2762, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.66e-04]Epoch [39]:  80%|########  | 200/250 [00:59<00:14,  3.35it/s, Loss=1.2762, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.66e-04]
-Step 200/250:
-• Loss: 1.2762 (Cls: 0.5830, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [39]:  80%|########  | 200/250 [01:13<00:14,  3.35it/s, Loss=1.3887, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.66e-04]Epoch [39]: |          | 300/? [01:13<00:00,  4.39it/s, Loss=1.3887, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.66e-04]      
-Step 250/250:
-• Loss: 1.3887 (Cls: 0.6955, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [39]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.3887, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.66e-04]
-Test:[0/7]	Time  0.321 ( 0.321)	Loss 4.0432e-01 (4.0432e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00016556002607617017
-Epoch [40]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [40]:   0%|          | 0/250 [00:30<?, ?it/s, Loss=1.3388, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.64e-04]Epoch [40]:  40%|####      | 100/250 [00:30<00:45,  3.29it/s, Loss=1.3388, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.64e-04]
-Step 100/250:
-• Loss: 1.3388 (Cls: 0.6456, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [40]:  40%|####      | 100/250 [00:59<00:45,  3.29it/s, Loss=1.3451, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.63e-04]Epoch [40]:  80%|########  | 200/250 [00:59<00:14,  3.34it/s, Loss=1.3451, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.63e-04]
-Step 200/250:
-• Loss: 1.3451 (Cls: 0.6519, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [40]:  80%|########  | 200/250 [01:15<00:14,  3.34it/s, Loss=1.3187, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.63e-04]Epoch [40]: |          | 300/? [01:15<00:00,  4.30it/s, Loss=1.3187, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.63e-04]      
-Step 250/250:
-• Loss: 1.3187 (Cls: 0.6255, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [40]: |          | 300/? [01:15<00:00,  3.98it/s, Loss=1.3187, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.63e-04]
-Test:[0/7]	Time  0.303 ( 0.303)	Loss 4.5818e-01 (4.5818e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0001627929556215425
-Epoch [41]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [41]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.4105, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.62e-04]Epoch [41]:  40%|####      | 100/250 [00:28<00:42,  3.52it/s, Loss=1.4105, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.62e-04]
-Step 100/250:
-• Loss: 1.4105 (Cls: 0.7173, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [41]:  40%|####      | 100/250 [00:58<00:42,  3.52it/s, Loss=1.2925, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.61e-04]Epoch [41]:  80%|########  | 200/250 [00:58<00:14,  3.39it/s, Loss=1.2925, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.61e-04]
-Step 200/250:
-• Loss: 1.2925 (Cls: 0.5994, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [41]:  80%|########  | 200/250 [01:13<00:14,  3.39it/s, Loss=1.2949, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.60e-04]Epoch [41]: |          | 300/? [01:13<00:00,  4.37it/s, Loss=1.2949, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.60e-04]      
-Step 250/250:
-• Loss: 1.2949 (Cls: 0.6017, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [41]: |          | 300/? [01:13<00:00,  4.07it/s, Loss=1.2949, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.60e-04]
-Test:[0/7]	Time  0.302 ( 0.302)	Loss 4.1749e-01 (4.1749e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00016013144391807145
-Epoch [42]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [42]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.4118, ClsAcc=53.12%, DomainAcc=50.00%, LR=1.59e-04]Epoch [42]:  40%|####      | 100/250 [00:28<00:43,  3.45it/s, Loss=1.4118, ClsAcc=53.12%, DomainAcc=50.00%, LR=1.59e-04]
-Step 100/250:
-• Loss: 1.4118 (Cls: 0.7187, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [42]:  40%|####      | 100/250 [00:58<00:43,  3.45it/s, Loss=1.2920, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.58e-04]Epoch [42]:  80%|########  | 200/250 [00:58<00:14,  3.44it/s, Loss=1.2920, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.58e-04]
-Step 200/250:
-• Loss: 1.2920 (Cls: 0.5989, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [42]:  80%|########  | 200/250 [01:12<00:14,  3.44it/s, Loss=1.3038, ClsAcc=78.12%, DomainAcc=50.00%, LR=1.58e-04]Epoch [42]: |          | 300/? [01:12<00:00,  4.43it/s, Loss=1.3038, ClsAcc=78.12%, DomainAcc=50.00%, LR=1.58e-04]      
-Step 250/250:
-• Loss: 1.3038 (Cls: 0.6106, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [42]: |          | 300/? [01:12<00:00,  4.11it/s, Loss=1.3038, ClsAcc=78.12%, DomainAcc=50.00%, LR=1.58e-04]
-Test:[0/7]	Time  0.311 ( 0.311)	Loss 5.2415e-01 (5.2415e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00015756929795875878
-Epoch [43]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [43]:   0%|          | 0/250 [00:29<?, ?it/s, Loss=1.3144, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.57e-04]Epoch [43]:  40%|####      | 100/250 [00:29<00:44,  3.35it/s, Loss=1.3144, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.57e-04]
-Step 100/250:
-• Loss: 1.3144 (Cls: 0.6212, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [43]:  40%|####      | 100/250 [00:59<00:44,  3.35it/s, Loss=1.3834, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.56e-04]Epoch [43]:  80%|########  | 200/250 [00:59<00:14,  3.37it/s, Loss=1.3834, ClsAcc=59.38%, DomainAcc=50.00%, LR=1.56e-04]
-Step 200/250:
-• Loss: 1.3834 (Cls: 0.6903, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [43]:  80%|########  | 200/250 [01:14<00:14,  3.37it/s, Loss=1.3927, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.55e-04]Epoch [43]: |          | 300/? [01:14<00:00,  4.37it/s, Loss=1.3927, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.55e-04]      
-Step 250/250:
-• Loss: 1.3927 (Cls: 0.6995, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [43]: |          | 300/? [01:14<00:00,  4.04it/s, Loss=1.3927, ClsAcc=56.25%, DomainAcc=50.00%, LR=1.55e-04]
-Test:[0/7]	Time  0.315 ( 0.315)	Loss 4.7761e-01 (4.7761e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00015510080985034995
-Epoch [44]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [44]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.2878, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.54e-04]Epoch [44]:  40%|####      | 100/250 [00:28<00:42,  3.51it/s, Loss=1.2878, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.54e-04]
-Step 100/250:
-• Loss: 1.2878 (Cls: 0.5947, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [44]:  40%|####      | 100/250 [00:57<00:42,  3.51it/s, Loss=1.3559, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.53e-04]Epoch [44]:  80%|########  | 200/250 [00:57<00:14,  3.47it/s, Loss=1.3559, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.53e-04]
-Step 200/250:
-• Loss: 1.3559 (Cls: 0.6627, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [44]:  80%|########  | 200/250 [01:11<00:14,  3.47it/s, Loss=1.3382, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.53e-04]Epoch [44]: |          | 300/? [01:11<00:00,  4.51it/s, Loss=1.3382, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.53e-04]      
-Step 250/250:
-• Loss: 1.3382 (Cls: 0.6451, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [44]: |          | 300/? [01:11<00:00,  4.18it/s, Loss=1.3382, ClsAcc=65.62%, DomainAcc=50.00%, LR=1.53e-04]
-Test:[0/7]	Time  0.281 ( 0.281)	Loss 4.1206e-01 (4.1206e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.0001527207096642425
-Epoch [45]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [45]:   0%|          | 0/250 [00:28<?, ?it/s, Loss=1.3418, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.52e-04]Epoch [45]:  40%|####      | 100/250 [00:28<00:43,  3.48it/s, Loss=1.3418, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.52e-04]
-Step 100/250:
-• Loss: 1.3418 (Cls: 0.6486, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [45]:  40%|####      | 100/250 [00:56<00:43,  3.48it/s, Loss=1.3159, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.51e-04]Epoch [45]:  80%|########  | 200/250 [00:56<00:14,  3.53it/s, Loss=1.3159, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.51e-04]
-Step 200/250:
-• Loss: 1.3159 (Cls: 0.6228, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [45]:  80%|########  | 200/250 [01:10<00:14,  3.53it/s, Loss=1.3242, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.50e-04]Epoch [45]: |          | 300/? [01:10<00:00,  4.59it/s, Loss=1.3242, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.50e-04]      
-Step 250/250:
-• Loss: 1.3242 (Cls: 0.6311, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [45]: |          | 300/? [01:10<00:00,  4.24it/s, Loss=1.3242, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.50e-04]
-Test:[0/7]	Time  0.295 ( 0.295)	Loss 5.0213e-01 (5.0213e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00015042412372345574
-Epoch [46]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [46]:   0%|          | 0/250 [00:27<?, ?it/s, Loss=1.2090, ClsAcc=81.25%, DomainAcc=50.00%, LR=1.50e-04]Epoch [46]:  40%|####      | 100/250 [00:27<00:41,  3.58it/s, Loss=1.2090, ClsAcc=81.25%, DomainAcc=50.00%, LR=1.50e-04]
-Step 100/250:
-• Loss: 1.2090 (Cls: 0.5158, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [46]:  40%|####      | 100/250 [00:57<00:41,  3.58it/s, Loss=1.3281, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.49e-04]Epoch [46]:  80%|########  | 200/250 [00:57<00:14,  3.50it/s, Loss=1.3281, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.49e-04]
-Step 200/250:
-• Loss: 1.3281 (Cls: 0.6349, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [46]:  80%|########  | 200/250 [01:11<00:14,  3.50it/s, Loss=1.2593, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.48e-04]Epoch [46]: |          | 300/? [01:11<00:00,  4.51it/s, Loss=1.2593, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.48e-04]      
-Step 250/250:
-• Loss: 1.2593 (Cls: 0.5662, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [46]: |          | 300/? [01:11<00:00,  4.20it/s, Loss=1.2593, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.48e-04]
-Test:[0/7]	Time  0.302 ( 0.302)	Loss 3.5897e-01 (3.5897e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00014820653760436707
-Epoch [47]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [47]:   0%|          | 0/250 [00:27<?, ?it/s, Loss=1.3160, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.47e-04]Epoch [47]:  40%|####      | 100/250 [00:27<00:41,  3.63it/s, Loss=1.3160, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.47e-04]
-Step 100/250:
-• Loss: 1.3160 (Cls: 0.6228, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [47]:  40%|####      | 100/250 [00:56<00:41,  3.63it/s, Loss=1.2898, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.46e-04]Epoch [47]:  80%|########  | 200/250 [00:56<00:14,  3.56it/s, Loss=1.2898, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.46e-04]
-Step 200/250:
-• Loss: 1.2898 (Cls: 0.5966, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [47]:  80%|########  | 200/250 [01:10<00:14,  3.56it/s, Loss=1.2879, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.46e-04]Epoch [47]: |          | 300/? [01:10<00:00,  4.56it/s, Loss=1.2879, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.46e-04]      
-Step 250/250:
-• Loss: 1.2879 (Cls: 0.5948, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [47]: |          | 300/? [01:10<00:00,  4.25it/s, Loss=1.2879, ClsAcc=71.88%, DomainAcc=50.00%, LR=1.46e-04]
-Test:[0/7]	Time  0.300 ( 0.300)	Loss 3.7172e-01 (3.7172e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00014606376323968783
-Epoch [48]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [48]:   0%|          | 0/250 [00:27<?, ?it/s, Loss=1.3602, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.45e-04]Epoch [48]:  40%|####      | 100/250 [00:27<00:41,  3.61it/s, Loss=1.3602, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.45e-04]
-Step 100/250:
-• Loss: 1.3602 (Cls: 0.6670, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [48]:  40%|####      | 100/250 [00:55<00:41,  3.61it/s, Loss=1.2784, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.44e-04]Epoch [48]:  80%|########  | 200/250 [00:55<00:13,  3.57it/s, Loss=1.2784, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.44e-04]
-Step 200/250:
-• Loss: 1.2784 (Cls: 0.5853, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [48]:  80%|########  | 200/250 [01:10<00:13,  3.57it/s, Loss=1.3584, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.44e-04]Epoch [48]: |          | 300/? [01:10<00:00,  4.61it/s, Loss=1.3584, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.44e-04]      
-Step 250/250:
-• Loss: 1.3584 (Cls: 0.6652, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [48]: |          | 300/? [01:10<00:00,  4.28it/s, Loss=1.3584, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.44e-04]
-Test:[0/7]	Time  0.301 ( 0.301)	Loss 4.3646e-01 (4.3646e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-lr: 0.00014399190959908407
-Epoch [49]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [49]:   0%|          | 0/250 [00:27<?, ?it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.43e-04]Epoch [49]:  40%|####      | 100/250 [00:27<00:41,  3.62it/s, Loss=1.3547, ClsAcc=62.50%, DomainAcc=50.00%, LR=1.43e-04]
-Step 100/250:
-• Loss: 1.3547 (Cls: 0.6616, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [49]:  40%|####      | 100/250 [00:55<00:41,  3.62it/s, Loss=1.2728, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.42e-04]Epoch [49]:  80%|########  | 200/250 [00:55<00:13,  3.57it/s, Loss=1.2728, ClsAcc=75.00%, DomainAcc=50.00%, LR=1.42e-04]
-Step 200/250:
-• Loss: 1.2728 (Cls: 0.5797, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [49]:  80%|########  | 200/250 [01:10<00:13,  3.57it/s, Loss=1.3166, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.42e-04]Epoch [49]: |          | 300/? [01:10<00:00,  4.55it/s, Loss=1.3166, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.42e-04]      
-Step 250/250:
-• Loss: 1.3166 (Cls: 0.6235, DA: 0.6931)
-• Batch: 32 src, 32 tgt samples
-• Mem: 243.0MB used
-
-Epoch [49]: |          | 300/? [01:10<00:00,  4.25it/s, Loss=1.3166, ClsAcc=68.75%, DomainAcc=50.00%, LR=1.42e-04]
-Test:[0/7]	Time  0.306 ( 0.306)	Loss 4.3572e-01 (4.3572e-01)
- * Acc@1 45.000%
-/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/metrics/_classification.py:1565: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
-  _warn_prf(average, modifier, f"{metric.capitalize()} is", len(result))
-Precision: 0.2250, Recall: 0.5000, F1 Score: 0.3103
-acc1 = 45.0
-best_acc1 = 45.0
-Test:[0/7]	Time  0.279 ( 0.279)	Loss 3.4880e+00 (3.4880e+00)
- * Acc@1 60.909%
-Precision: 0.6391, Recall: 0.6263, F1 Score: 0.6044
-test_acc1 = 60.9
