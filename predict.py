@@ -54,17 +54,23 @@ def load_model(task_path):
     backbone = models.resnet18(weights=None)
     model = Classifier(backbone)
     
-    checkpoint = torch.load(task_path, map_location=device)
-
-    # Make sure it's a state_dict and not a full model object
-    if isinstance(checkpoint, dict) and 'state_dict' in checkpoint:
-        checkpoint = checkpoint['state_dict']
-
-    # Remove 'module.' if trained with DDP
+    try:
+        checkpoint = torch.load(task_path, map_location=device, weights_only=False)
+    except Exception as e:
+        print(f"Error loading checkpoint file: {str(e)}", file=sys.stderr)
+        raise RuntimeError("Checkpoint loading failed. Ensure the checkpoint is compatible with your PyTorch version.")
+    
+    # Check if the checkpoint keys contain 'module.' and remove it for multi-GPU model saving
     if any(k.startswith('module.') for k in checkpoint.keys()):
         checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
-
-    model.load_state_dict(checkpoint, strict=False)
+    
+    # Try loading the checkpoint into the model
+    try:
+        model.load_state_dict(checkpoint, strict=False)
+    except RuntimeError as e:
+        print(f"Error loading state_dict: {str(e)}", file=sys.stderr)
+        raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
+    
     return model.to(device).eval()
 
 def process_image(image_path):
