@@ -1,5 +1,6 @@
 
-numpy
+numpy<2.0
+
 Pillow
 torch==2.2.2
 torchvision==0.17.2
