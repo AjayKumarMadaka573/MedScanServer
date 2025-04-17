@@ -47,8 +47,8 @@ app.post('/predict', upload.single('image'), (req, res) => {
     
     console.log('Uploaded file:', req.file); // Log the file information for debugging
     const imgPath = req.file.path;
-    const anacondaPython = 'C:\\Users\\AJAY KUMAR MADAKA\\anaconda3\\python.exe';
-
+    // const anacondaPython = 'C:\\Users\\AJAY KUMAR MADAKA\\anaconda3\\python.exe';
+    const anacondaPython = "python3"
     // Execute Python script using execFile
     execFile(anacondaPython , ['predict.py', imgPath], (err, stdout, stderr) => {
         if (err) {
