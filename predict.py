@@ -50,29 +50,62 @@ class Classifier(nn.Module):
         features = self.bottleneck(x)
         return self.classifier(features), features
 
-def load_model(task_path):
-    backbone = models.resnet18(weights=None)
-    model = Classifier(backbone)
+# def load_model(task_path):
+#     backbone = models.resnet18(weights=None)
+#     model = Classifier(backbone)
     
-    try:
-        checkpoint = torch.load(task_path, map_location=device, weights_only=False)
-    except Exception as e:
-        print(f"Error loading checkpoint file: {str(e)}", file=sys.stderr)
-        raise RuntimeError("Checkpoint loading failed. Ensure the checkpoint is compatible with your PyTorch version.")
+#     try:
+#         checkpoint = torch.load(task_path, map_location=device, weights_only=False)
+#     except Exception as e:
+#         print(f"Error loading checkpoint file: {str(e)}", file=sys.stderr)
+#         raise RuntimeError("Checkpoint loading failed. Ensure the checkpoint is compatible with your PyTorch version.")
     
-    # Check if the checkpoint keys contain 'module.' and remove it for multi-GPU model saving
-    if any(k.startswith('module.') for k in checkpoint.keys()):
-        checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
+#     # Check if the checkpoint keys contain 'module.' and remove it for multi-GPU model saving
+#     if any(k.startswith('module.') for k in checkpoint.keys()):
+#         checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
     
-    # Try loading the checkpoint into the model
-    try:
-        model.load_state_dict(checkpoint, strict=False)
-    except RuntimeError as e:
-        print(f"Error loading state_dict: {str(e)}", file=sys.stderr)
-        raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
+#     # Try loading the checkpoint into the model
+#     try:
+#         model.load_state_dict(checkpoint, strict=False)
+#     except RuntimeError as e:
+#         print(f"Error loading state_dict: {str(e)}", file=sys.stderr)
+#         raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
     
-    return model.to(device).eval()
+#     return model.to(device).eval()
 
+def load_model(task_path):
+    """Load a PyTorch model from checkpoint with robust error handling."""
+    try:
+        # Initialize model
+        backbone = models.resnet18(weights=None)
+        model = Classifier(backbone)
+        
+        # Load checkpoint
+        checkpoint = torch.load(task_path, map_location=device, weights_only=False)
+        
+        # Try loading checkpoint directly first
+        try:
+            model.load_state_dict(checkpoint, strict=False)
+        except RuntimeError:
+            # If direct loading fails, try removing 'module.' prefix from keys
+            new_checkpoint = {}
+            for key in checkpoint.keys():
+                new_key = key.replace('module.', '')
+                new_checkpoint[new_key] = checkpoint[key]
+            model.load_state_dict(new_checkpoint, strict=False)
+        
+        # Move model to device and set to eval mode
+        model = model.to(device).eval()
+        return model
+        
+    except Exception as e:
+        error_msg = f"Failed to load model from {task_path}:\n{str(e)}"
+        if isinstance(e, RuntimeError) and "Missing key(s)" in str(e):
+            error_msg += "\nPossible model architecture mismatch"
+        elif isinstance(e, FileNotFoundError):
+            error_msg += "\nCheck if file exists and path is correct"
+        raise RuntimeError(error_msg)
+    
 def process_image(image_path):
     try:
         img = Image.open(image_path).convert('RGB')
