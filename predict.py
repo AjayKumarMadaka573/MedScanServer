@@ -139,7 +139,7 @@ def main():
                 
                 if not all(os.path.exists(p) for p in [model_path, feat_path]):
                     
-                    print(json.dumps("All required things are not there"), file=sys.stderr)
+                    print(json.dumps(p), file=sys.stderr)
                     continue
                 
                 model = load_model(model_path)
