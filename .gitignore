@@ -1,0 +1,19 @@
+# Node modules (dependencies)
+node_modules/
+
+# Uploaded files
+uploads/
+
+# Environment variables
+.env
+
+# Logs
+*.log
+
+# System files
+.DS_Store
+Thumbs.db
+
+# Optional: Ignore build artifacts
+dist/
+build/
