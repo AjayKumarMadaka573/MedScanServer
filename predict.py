@@ -129,7 +129,20 @@ def main():
         
         model_dir = os.path.join(os.path.dirname(__file__), "model_checkpoints")
         feat_dir = os.path.join(os.path.dirname(__file__), "domain_features_dann")
-        
+
+        #debugging
+        files = [f for f in os.listdir(model_dir) if os.path.isfile(os.path.join(directory_path, f))]
+
+        # Print the list of files
+        for file in files:
+            print(json.dumps(file))
+
+        files = [f for f in os.listdir(feat_dir) if os.path.isfile(os.path.join(directory_path, f))]
+
+        # Print the list of files
+        for file in files:
+            print(json.dumps(file))
+
         best_result = {"task": None, "distance": float('inf'), "label": None}
         
         for task in domain_tasks:
