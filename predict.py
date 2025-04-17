@@ -138,8 +138,8 @@ def main():
                 feat_path = os.path.join(feat_dir, f"{task}_features.npy")
                 
                 if not all(os.path.exists(p) for p in [model_path, feat_path]):
-                    
-                    print(json.dumps(p), file=sys.stderr)
+                    for p in [model_path, feat_path]:
+                        print(json.dumps(p), file=sys.stderr)
                     continue
                 
                 model = load_model(model_path)
