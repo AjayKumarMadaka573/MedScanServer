@@ -72,40 +72,63 @@ class Classifier(nn.Module):
 #         raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
     
 #     return model.to(device).eval()
-
 def load_model(task_path):
-    """Load a PyTorch model from checkpoint with robust error handling."""
+    """Load a PyTorch model from checkpoint with enhanced error handling."""
     try:
         # Initialize model
         backbone = models.resnet18(weights=None)
         model = Classifier(backbone)
         
-        # Load checkpoint
-        checkpoint = torch.load(task_path, map_location=device, weights_only=False)
-        
-        # Try loading checkpoint directly first
+        # First verify the checkpoint exists and is readable
+        if not os.path.exists(task_path):
+            raise FileNotFoundError(f"Checkpoint file not found at {task_path}")
+            
+        # Try loading checkpoint with multiple approaches
         try:
+            # Attempt direct loading first
+            checkpoint = torch.load(task_path, map_location=device)
+            
+            # Handle potential multi-GPU format
+            if isinstance(checkpoint, dict) and any(k.startswith('module.') for k in checkpoint.keys()):
+                checkpoint = {k.replace('module.', ''): checkpoint[k] for k in checkpoint.keys()}
+                
             model.load_state_dict(checkpoint, strict=False)
-        except RuntimeError:
-            # If direct loading fails, try removing 'module.' prefix from keys
-            new_checkpoint = {}
-            for key in checkpoint.keys():
-                new_key = key.replace('module.', '')
-                new_checkpoint[new_key] = checkpoint[key]
-            model.load_state_dict(new_checkpoint, strict=False)
+            
+        except (RuntimeError, KeyError) as e:
+            # If standard loading fails, try alternative approaches
+            try:
+                # Attempt loading just the state_dict if checkpoint contains it
+                checkpoint = torch.load(task_path, map_location=device)
+                if 'state_dict' in checkpoint:
+                    state_dict = checkpoint['state_dict']
+                    model.load_state_dict(state_dict, strict=False)
+                else:
+                    raise RuntimeError("Checkpoint doesn't contain valid state_dict")
+            except Exception as e:
+                raise RuntimeError(f"Failed to load model weights: {str(e)}")
         
-        # Move model to device and set to eval mode
+        # Verify model loaded successfully
         model = model.to(device).eval()
+        
+        # Quick sanity check
+        with torch.no_grad():
+            dummy_input = torch.randn(1, 3, 224, 224).to(device)
+            _ = model(dummy_input)
+            
         return model
         
     except Exception as e:
-        error_msg = f"Failed to load model from {task_path}:\n{str(e)}"
-        if isinstance(e, RuntimeError) and "Missing key(s)" in str(e):
-            error_msg += "\nPossible model architecture mismatch"
-        elif isinstance(e, FileNotFoundError):
-            error_msg += "\nCheck if file exists and path is correct"
+        error_msg = f"Error processing {os.path.basename(task_path)}: Failed to load model from {task_path}:\n{str(e)}"
+        
+        # Specific handling for common errors
+        if "invalid load key" in str(e):
+            error_msg += "\nThe checkpoint file may be corrupted or in wrong format."
+            error_msg += "\nPlease verify:"
+            error_msg += "\n1. The file is a valid PyTorch checkpoint"
+            error_msg += "\n2. The file wasn't truncated during download/save"
+            error_msg += "\n3. The file matches your PyTorch version"
+        
         raise RuntimeError(error_msg)
-    
 def process_image(image_path):
     try:
         img = Image.open(image_path).convert('RGB')
