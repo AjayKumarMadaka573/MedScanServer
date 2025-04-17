@@ -53,7 +53,7 @@ class Classifier(nn.Module):
 def load_model(task_path):
     backbone = models.resnet18(weights=None)
     model = Classifier(backbone)
-    checkpoint = torch.load(task_path, map_location=device)
+    checkpoint = torch.load(task_path, map_location=device, weights_only=False)
     
     if any(k.startswith('module.') for k in checkpoint.keys()):
         checkpoint = {k.replace('module.', ''): v for k,v in checkpoint.items()}
