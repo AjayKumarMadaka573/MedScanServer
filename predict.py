@@ -131,13 +131,13 @@ def main():
         feat_dir = os.path.join(os.path.dirname(__file__), "domain_features_dann")
 
         #debugging
-        files = [f for f in os.listdir(model_dir) if os.path.isfile(os.path.join(directory_path, f))]
+        files = [f for f in os.listdir(model_dir) if os.path.isfile(os.path.join(model_dir, f))]
 
         # Print the list of files
         for file in files:
             print(json.dumps(file))
 
-        files = [f for f in os.listdir(feat_dir) if os.path.isfile(os.path.join(directory_path, f))]
+        files = [f for f in os.listdir(feat_dir) if os.path.isfile(os.path.join(feat_dir, f))]
 
         # Print the list of files
         for file in files:
