@@ -170,8 +170,8 @@ def main():
                 print(f"Error processing {task}: {str(e)}", file=sys.stderr)
                 continue
         
-        if best_result["task"] is None:
-            raise RuntimeError("No valid tasks processed")
+        # if best_result["task"] is None:
+        #     raise RuntimeError("No valid tasks processed")
         best_result["task"] = domain_tasks[best_result["task"]]
         label_map = {0: "Benign", 1: "Malignant"}
         best_result["label"] = label_map.get(best_result["label"], "Unknown")
