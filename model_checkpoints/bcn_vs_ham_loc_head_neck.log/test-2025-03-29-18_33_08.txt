@@ -1,0 +1,8 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann1.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+Test:[0/7]	Time  1.689 ( 1.689)	Loss 3.4880e+00 (3.4880e+00)
+ * Acc@1 60.909%
+Precision: 0.6391, Recall: 0.6263, F1 Score: 0.6044
+Accuracy: 60.9091

@@ -1,0 +1,13 @@
+./dann.py:40: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+Test: [ 0/18]	Time  1.675 ( 1.675)	Loss 2.1072e+00 (2.1072e+00)	Acc@1  25.00 ( 25.00)
+ * Acc@1 95.512
+/u/student/2021/cs21resch15002/anaconda3/lib/python3.8/site-packages/sklearn/metrics/_classification.py:1471: UndefinedMetricWarning: Precision is ill-defined and being set to 0.0 in labels with no predicted samples. Use `zero_division` parameter to control this behavior.
+  _warn_prf(average, modifier, msg_start, len(result))
+Precision: 0.4776, Recall: 0.5000, F1 Score: 0.4885
+Accuracy: 95.5117
+Precision: 0.4776
+Recall: 0.5000
+F1 Score: 0.4885

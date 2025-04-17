@@ -1,0 +1,24 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+Extracting Features:   0%|          | 0/27 [00:00<?, ?it/s]Extracting Features:   4%|3         | 1/27 [00:01<00:39,  1.53s/it]Extracting Features:  19%|#8        | 5/27 [00:02<00:07,  2.89it/s]Extracting Features:  22%|##2       | 6/27 [00:02<00:06,  3.13it/s]Extracting Features:  26%|##5       | 7/27 [00:02<00:07,  2.82it/s]Extracting Features:  30%|##9       | 8/27 [00:02<00:05,  3.17it/s]Extracting Features:  33%|###3      | 9/27 [00:03<00:06,  2.73it/s]Extracting Features:  37%|###7      | 10/27 [00:03<00:05,  3.13it/s]Extracting Features:  41%|####      | 11/27 [00:04<00:05,  2.73it/s]Extracting Features:  44%|####4     | 12/27 [00:04<00:04,  3.13it/s]Extracting Features:  48%|####8     | 13/27 [00:04<00:05,  2.79it/s]Extracting Features:  52%|#####1    | 14/27 [00:05<00:04,  3.22it/s]Extracting Features:  56%|#####5    | 15/27 [00:05<00:03,  3.04it/s]Extracting Features:  59%|#####9    | 16/27 [00:05<00:03,  3.19it/s]Extracting Features:  63%|######2   | 17/27 [00:06<00:03,  3.13it/s]Extracting Features:  67%|######6   | 18/27 [00:06<00:02,  3.28it/s]Extracting Features:  70%|#######   | 19/27 [00:06<00:02,  3.08it/s]Extracting Features:  74%|#######4  | 20/27 [00:06<00:02,  3.26it/s]Extracting Features:  78%|#######7  | 21/27 [00:07<00:01,  3.18it/s]Extracting Features:  81%|########1 | 22/27 [00:07<00:01,  3.33it/s]Extracting Features:  85%|########5 | 23/27 [00:07<00:01,  2.99it/s]Extracting Features:  89%|########8 | 24/27 [00:08<00:00,  3.29it/s]Extracting Features:  93%|#########2| 25/27 [00:08<00:00,  2.97it/s]Extracting Features:  96%|#########6| 26/27 [00:08<00:00,  3.38it/s]Extracting Features: 100%|##########| 27/27 [00:09<00:00,  3.14it/s]Extracting Features: 100%|##########| 27/27 [00:09<00:00,  2.95it/s]
+Extracting Features:   0%|          | 0/17 [00:00<?, ?it/s]Extracting Features:   6%|5         | 1/17 [00:00<00:08,  1.92it/s]Extracting Features:  18%|#7        | 3/17 [00:00<00:03,  4.58it/s]Extracting Features:  29%|##9       | 5/17 [00:00<00:02,  5.95it/s]Extracting Features:  41%|####1     | 7/17 [00:01<00:01,  6.37it/s]Extracting Features:  53%|#####2    | 9/17 [00:01<00:01,  6.17it/s]Extracting Features:  65%|######4   | 11/17 [00:01<00:00,  7.02it/s]Extracting Features:  76%|#######6  | 13/17 [00:02<00:00,  5.98it/s]Extracting Features:  88%|########8 | 15/17 [00:02<00:00,  6.72it/s]Extracting Features: 100%|##########| 17/17 [00:02<00:00,  6.55it/s]Extracting Features: 100%|##########| 17/17 [00:02<00:00,  6.03it/s]
+source_feature.shape:  torch.Size([864, 512])
+/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+Source t-SNE Shape: (864, 2)
+Target t-SNE Shape: (544, 2)
+0
+Saving t-SNE to /u/student/2021/cs21resch15002/DomainShift/Outputs/ISIC_Dataset/bcn_vs_ham_age_u30.log/visualize/bcn_age_u30_vs_ham_age_u30_TSNE.pdf
+epoch 0 accuracy: 63.82978439331055 A-dist: 0.5531914234161377
+epoch 1 accuracy: 70.21276092529297 A-dist: 0.8085103034973145
+epoch 2 accuracy: 68.79432678222656 A-dist: 0.7517731189727783
+epoch 3 accuracy: 68.43971252441406 A-dist: 0.7375884056091309
+epoch 4 accuracy: 65.60283660888672 A-dist: 0.6241133213043213
+epoch 5 accuracy: 64.18439483642578 A-dist: 0.567375659942627
+epoch 6 accuracy: 65.95744323730469 A-dist: 0.6382975578308105
+epoch 7 accuracy: 64.18439483642578 A-dist: 0.567375659942627
+epoch 8 accuracy: 65.95744323730469 A-dist: 0.6382975578308105
+epoch 9 accuracy: 65.24822235107422 A-dist: 0.6099288463592529
+A-distance = tensor(0.6099, device='cuda:0')
