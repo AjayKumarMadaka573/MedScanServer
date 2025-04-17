@@ -7,12 +7,12 @@ uploads/
 # Environment variables
 .env
 
-# Logs
-*.log
 
 # System files
 .DS_Store
 Thumbs.db
+
+*.pth
 
 # Optional: Ignore build artifacts
 dist/
