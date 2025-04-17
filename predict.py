@@ -53,11 +53,17 @@ class Classifier(nn.Module):
 def load_model(task_path):
     backbone = models.resnet18(weights=None)
     model = Classifier(backbone)
-    checkpoint = torch.load(task_path, map_location=device, weights_only=False)
     
+    checkpoint = torch.load(task_path, map_location=device)
+
+    # Make sure it's a state_dict and not a full model object
+    if isinstance(checkpoint, dict) and 'state_dict' in checkpoint:
+        checkpoint = checkpoint['state_dict']
+
+    # Remove 'module.' if trained with DDP
     if any(k.startswith('module.') for k in checkpoint.keys()):
-        checkpoint = {k.replace('module.', ''): v for k,v in checkpoint.items()}
-    
+        checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
+
     model.load_state_dict(checkpoint, strict=False)
     return model.to(device).eval()
 
