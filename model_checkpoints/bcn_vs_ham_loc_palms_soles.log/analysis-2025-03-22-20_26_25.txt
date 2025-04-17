@@ -1,0 +1,24 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:40: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+Extracting Features:   0%|          | 0/9 [00:00<?, ?it/s]Extracting Features:  11%|#1        | 1/9 [00:01<00:15,  1.98s/it]Extracting Features:  67%|######6   | 6/9 [00:02<00:00,  3.12it/s]Extracting Features:  89%|########8 | 8/9 [00:02<00:00,  3.55it/s]Extracting Features: 100%|##########| 9/9 [00:02<00:00,  3.07it/s]
+Extracting Features:   0%|          | 0/9 [00:00<?, ?it/s]Extracting Features:  11%|#1        | 1/9 [00:00<00:04,  1.89it/s]Extracting Features:  33%|###3      | 3/9 [00:00<00:01,  3.50it/s]Extracting Features:  56%|#####5    | 5/9 [00:01<00:00,  4.11it/s]Extracting Features:  78%|#######7  | 7/9 [00:01<00:00,  4.34it/s]Extracting Features: 100%|##########| 9/9 [00:02<00:00,  4.40it/s]Extracting Features: 100%|##########| 9/9 [00:02<00:00,  3.89it/s]
+Extracting Features:   0%|          | 0/6 [00:00<?, ?it/s]Extracting Features:  17%|#6        | 1/6 [00:00<00:01,  3.55it/s]Extracting Features:  50%|#####     | 3/6 [00:00<00:00,  7.43it/s]Extracting Features:  83%|########3 | 5/6 [00:00<00:00,  9.40it/s]Extracting Features: 100%|##########| 6/6 [00:00<00:00,  8.78it/s]
+source_feature.shape:  torch.Size([288, 512])
+/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+Source t-SNE Shape: (288, 2)
+Target t-SNE Shape: (192, 2)
+Saving t-SNE to /u/student/2021/cs21resch15002/DomainShift/Outputs/ISIC_Dataset/bcn_vs_ham_loc_palms_soles.log/visualize/bcn_loc_palms_soles_vs_ham_loc_palms_soles_TSNE.pdf
+epoch 0 accuracy: 64.58333587646484 A-dist: 0.5833334922790527
+epoch 1 accuracy: 64.58333587646484 A-dist: 0.5833334922790527
+epoch 2 accuracy: 64.58333587646484 A-dist: 0.5833334922790527
+epoch 3 accuracy: 65.625 A-dist: 0.625
+epoch 4 accuracy: 70.83333587646484 A-dist: 0.8333332538604736
+epoch 5 accuracy: 75.0 A-dist: 1.0
+epoch 6 accuracy: 75.0 A-dist: 1.0
+epoch 7 accuracy: 75.0 A-dist: 1.0
+epoch 8 accuracy: 75.0 A-dist: 1.0
+epoch 9 accuracy: 73.95833587646484 A-dist: 0.9583332538604736
+A-distance = tensor(0.9583, device='cuda:0')

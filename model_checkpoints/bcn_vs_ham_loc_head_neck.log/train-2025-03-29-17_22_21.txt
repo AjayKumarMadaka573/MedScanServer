@@ -1,0 +1,15 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+lr: 0.1
+Epoch [0]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [0]:   0%|          | 0/250 [00:34<?, ?it/s, Loss=1.4795, ClsAcc=59.38%, DomainAcc=62.50%, LR=9.31e-02]Epoch [0]:  40%|####      | 100/250 [00:34<00:52,  2.87it/s, Loss=1.4795, ClsAcc=59.38%, DomainAcc=62.50%, LR=9.31e-02]Traceback (most recent call last):
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 416, in <module>
+    main(args)
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 188, in main
+    train(train_source_iter, train_target_iter, classifier, domain_adv, optimizer,
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 341, in train
+    tqdm.write(f"\nStep {i+1}/{args.iters_per_epoch}:")
+    ^^^^^^^^^^
+AttributeError: module 'tqdm' has no attribute 'write'
+Epoch [0]:  40%|####      | 100/250 [00:35<00:52,  2.83it/s, Loss=1.4795, ClsAcc=59.38%, DomainAcc=62.50%, LR=9.31e-02]

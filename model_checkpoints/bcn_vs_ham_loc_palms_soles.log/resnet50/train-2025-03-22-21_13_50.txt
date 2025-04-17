@@ -1,0 +1,11 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:40: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet50'
+Extracted Feature Dim: 2048
+Traceback (most recent call last):
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 340, in <module>
+    main(args)
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 104, in main
+    console.log(classifier.in_features)
+    ^^^^^^^
+NameError: name 'console' is not defined

@@ -1,0 +1,1209 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann1.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+lr: 0.001
+Epoch [0]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [0]:   0%|          | 0/250 [00:33<?, ?it/s, Loss=1.1780, ClsAcc=75.00%, DomainAcc=70.31%, LR=9.31e-04]Epoch [0]:  40%|####      | 100/250 [00:33<00:50,  2.94it/s, Loss=1.1780, ClsAcc=75.00%, DomainAcc=70.31%, LR=9.31e-04]
+Step 100/250:
+• Loss: 1.1780 (Cls: 0.5857, DA: 1.1847)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.3MB used
+
+Epoch [0]:  40%|####      | 100/250 [00:59<00:50,  2.94it/s, Loss=0.8958, ClsAcc=65.62%, DomainAcc=81.25%, LR=8.72e-04]Epoch [0]:  80%|########  | 200/250 [00:59<00:14,  3.47it/s, Loss=0.8958, ClsAcc=65.62%, DomainAcc=81.25%, LR=8.72e-04]
+Step 200/250:
+• Loss: 0.8958 (Cls: 0.6624, DA: 0.4667)
+• Batch: 32 src, 32 tgt samples
+• Mem: 245.6MB used
+
+Epoch [0]:  80%|########  | 200/250 [01:11<00:14,  3.47it/s, Loss=0.5439, ClsAcc=93.75%, DomainAcc=73.44%, LR=8.46e-04]Epoch [0]: |          | 300/? [01:11<00:00,  4.71it/s, Loss=0.5439, ClsAcc=93.75%, DomainAcc=73.44%, LR=8.46e-04]      
+Step 250/250:
+• Loss: 0.5439 (Cls: 0.3029, DA: 0.4820)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.6MB used
+
+Epoch [0]: |          | 300/? [01:11<00:00,  4.20it/s, Loss=0.5439, ClsAcc=93.75%, DomainAcc=73.44%, LR=8.46e-04]
+Test:[0/7]	Time  0.586 ( 0.586)	Loss 3.6769e-01 (3.6769e-01)
+ * Acc@1 50.455%
+Precision: 0.6543, Recall: 0.5468, F1 Score: 0.4269
+acc1 = 50.5
+lr: 0.0008458970107524513
+Epoch [1]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [1]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.7475, ClsAcc=78.12%, DomainAcc=75.00%, LR=7.98e-04]Epoch [1]:  40%|####      | 100/250 [00:24<00:37,  4.02it/s, Loss=0.7475, ClsAcc=78.12%, DomainAcc=75.00%, LR=7.98e-04]
+Step 100/250:
+• Loss: 0.7475 (Cls: 0.4747, DA: 0.5457)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.3MB used
+
+Epoch [1]:  40%|####      | 100/250 [00:48<00:37,  4.02it/s, Loss=0.7246, ClsAcc=84.38%, DomainAcc=71.88%, LR=7.57e-04]Epoch [1]:  80%|########  | 200/250 [00:48<00:12,  4.16it/s, Loss=0.7246, ClsAcc=84.38%, DomainAcc=71.88%, LR=7.57e-04]
+Step 200/250:
+• Loss: 0.7246 (Cls: 0.4204, DA: 0.6083)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.3MB used
+
+Epoch [1]:  80%|########  | 200/250 [01:01<00:12,  4.16it/s, Loss=0.6554, ClsAcc=81.25%, DomainAcc=75.00%, LR=7.38e-04]Epoch [1]: |          | 300/? [01:01<00:00,  5.29it/s, Loss=0.6554, ClsAcc=81.25%, DomainAcc=75.00%, LR=7.38e-04]      
+Step 250/250:
+• Loss: 0.6554 (Cls: 0.4066, DA: 0.4977)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.3MB used
+
+Epoch [1]: |          | 300/? [01:01<00:00,  4.91it/s, Loss=0.6554, ClsAcc=81.25%, DomainAcc=75.00%, LR=7.38e-04]
+Test:[0/7]	Time  0.316 ( 0.316)	Loss 3.7962e-01 (3.7962e-01)
+ * Acc@1 49.091%
+Precision: 0.6574, Recall: 0.5354, F1 Score: 0.3991
+acc1 = 49.1
+lr: 0.000737787946466881
+Epoch [2]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [2]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.5654, ClsAcc=90.62%, DomainAcc=71.88%, LR=7.03e-04]Epoch [2]:  40%|####      | 100/250 [00:23<00:34,  4.34it/s, Loss=0.5654, ClsAcc=90.62%, DomainAcc=71.88%, LR=7.03e-04]
+Step 100/250:
+• Loss: 0.5654 (Cls: 0.2697, DA: 0.5915)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [2]:  40%|####      | 100/250 [00:48<00:34,  4.34it/s, Loss=0.4277, ClsAcc=96.88%, DomainAcc=73.44%, LR=6.72e-04]Epoch [2]:  80%|########  | 200/250 [00:48<00:12,  4.07it/s, Loss=0.4277, ClsAcc=96.88%, DomainAcc=73.44%, LR=6.72e-04]
+Step 200/250:
+• Loss: 0.4277 (Cls: 0.1493, DA: 0.5567)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [2]:  80%|########  | 200/250 [01:00<00:12,  4.07it/s, Loss=0.5750, ClsAcc=90.62%, DomainAcc=70.31%, LR=6.57e-04]Epoch [2]: |          | 300/? [01:00<00:00,  5.32it/s, Loss=0.5750, ClsAcc=90.62%, DomainAcc=70.31%, LR=6.57e-04]      
+Step 250/250:
+• Loss: 0.5750 (Cls: 0.2901, DA: 0.5697)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [2]: |          | 300/? [01:00<00:00,  4.95it/s, Loss=0.5750, ClsAcc=90.62%, DomainAcc=70.31%, LR=6.57e-04]
+Test:[0/7]	Time  0.312 ( 0.312)	Loss 8.4123e-01 (8.4123e-01)
+ * Acc@1 55.455%
+Precision: 0.6868, Recall: 0.5914, F1 Score: 0.5075
+acc1 = 55.5
+lr: 0.0006572361810832017
+Epoch [3]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [3]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.6912, ClsAcc=84.38%, DomainAcc=81.25%, LR=6.30e-04]Epoch [3]:  40%|####      | 100/250 [00:25<00:38,  3.92it/s, Loss=0.6912, ClsAcc=84.38%, DomainAcc=81.25%, LR=6.30e-04]
+Step 100/250:
+• Loss: 0.6912 (Cls: 0.4633, DA: 0.4557)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [3]:  40%|####      | 100/250 [00:50<00:38,  3.92it/s, Loss=0.6497, ClsAcc=84.38%, DomainAcc=81.25%, LR=6.06e-04]Epoch [3]:  80%|########  | 200/250 [00:50<00:12,  3.99it/s, Loss=0.6497, ClsAcc=84.38%, DomainAcc=81.25%, LR=6.06e-04]
+Step 200/250:
+• Loss: 0.6497 (Cls: 0.3869, DA: 0.5254)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [3]:  80%|########  | 200/250 [01:02<00:12,  3.99it/s, Loss=0.6127, ClsAcc=87.50%, DomainAcc=70.31%, LR=5.95e-04]Epoch [3]: |          | 300/? [01:02<00:00,  5.19it/s, Loss=0.6127, ClsAcc=87.50%, DomainAcc=70.31%, LR=5.95e-04]      
+Step 250/250:
+• Loss: 0.6127 (Cls: 0.3441, DA: 0.5371)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [3]: |          | 300/? [01:02<00:00,  4.79it/s, Loss=0.6127, ClsAcc=87.50%, DomainAcc=70.31%, LR=5.95e-04]
+Test:[0/7]	Time  0.309 ( 0.309)	Loss 9.1645e-01 (9.1645e-01)
+ * Acc@1 56.818%
+Precision: 0.6860, Recall: 0.6028, F1 Score: 0.5296
+acc1 = 56.8
+lr: 0.0005946035575013605
+Epoch [4]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [4]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.5830, ClsAcc=87.50%, DomainAcc=62.50%, LR=5.73e-04]Epoch [4]:  40%|####      | 100/250 [00:23<00:35,  4.23it/s, Loss=0.5830, ClsAcc=87.50%, DomainAcc=62.50%, LR=5.73e-04]
+Step 100/250:
+• Loss: 0.5830 (Cls: 0.2812, DA: 0.6036)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [4]:  40%|####      | 100/250 [00:48<00:35,  4.23it/s, Loss=0.7066, ClsAcc=87.50%, DomainAcc=84.38%, LR=5.54e-04]Epoch [4]:  80%|########  | 200/250 [00:48<00:12,  4.11it/s, Loss=0.7066, ClsAcc=87.50%, DomainAcc=84.38%, LR=5.54e-04]
+Step 200/250:
+• Loss: 0.7066 (Cls: 0.3834, DA: 0.6463)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [4]:  80%|########  | 200/250 [01:00<00:12,  4.11it/s, Loss=0.6535, ClsAcc=87.50%, DomainAcc=65.62%, LR=5.44e-04]Epoch [4]: |          | 300/? [01:00<00:00,  5.33it/s, Loss=0.6535, ClsAcc=87.50%, DomainAcc=65.62%, LR=5.44e-04]      
+Step 250/250:
+• Loss: 0.6535 (Cls: 0.3334, DA: 0.6402)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [4]: |          | 300/? [01:00<00:00,  4.95it/s, Loss=0.6535, ClsAcc=87.50%, DomainAcc=65.62%, LR=5.44e-04]
+Test:[0/7]	Time  0.311 ( 0.311)	Loss 6.8216e-01 (6.8216e-01)
+ * Acc@1 55.000%
+Precision: 0.6447, Recall: 0.5836, F1 Score: 0.5125
+acc1 = 55.0
+lr: 0.0005443310539518174
+Epoch [5]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [5]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.5890, ClsAcc=90.62%, DomainAcc=59.38%, LR=5.27e-04]Epoch [5]:  40%|####      | 100/250 [00:23<00:35,  4.22it/s, Loss=0.5890, ClsAcc=90.62%, DomainAcc=59.38%, LR=5.27e-04]
+Step 100/250:
+• Loss: 0.5890 (Cls: 0.2861, DA: 0.6059)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [5]:  40%|####      | 100/250 [00:47<00:35,  4.22it/s, Loss=0.4450, ClsAcc=96.88%, DomainAcc=56.25%, LR=5.11e-04]Epoch [5]:  80%|########  | 200/250 [00:47<00:11,  4.21it/s, Loss=0.4450, ClsAcc=96.88%, DomainAcc=56.25%, LR=5.11e-04]
+Step 200/250:
+• Loss: 0.4450 (Cls: 0.1031, DA: 0.6837)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [5]:  80%|########  | 200/250 [00:59<00:11,  4.21it/s, Loss=0.5950, ClsAcc=93.75%, DomainAcc=51.56%, LR=5.03e-04]Epoch [5]: |          | 300/? [00:59<00:00,  5.42it/s, Loss=0.5950, ClsAcc=93.75%, DomainAcc=51.56%, LR=5.03e-04]      
+Step 250/250:
+• Loss: 0.5950 (Cls: 0.2265, DA: 0.7372)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [5]: |          | 300/? [00:59<00:00,  5.04it/s, Loss=0.5950, ClsAcc=93.75%, DomainAcc=51.56%, LR=5.03e-04]
+Test:[0/7]	Time  0.324 ( 0.324)	Loss 1.1642e+00 (1.1642e+00)
+ * Acc@1 59.091%
+Precision: 0.6412, Recall: 0.6143, F1 Score: 0.5783
+acc1 = 59.1
+lr: 0.0005029733718731742
+Epoch [6]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [6]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.7126, ClsAcc=87.50%, DomainAcc=57.81%, LR=4.88e-04]Epoch [6]:  40%|####      | 100/250 [00:24<00:36,  4.07it/s, Loss=0.7126, ClsAcc=87.50%, DomainAcc=57.81%, LR=4.88e-04]
+Step 100/250:
+• Loss: 0.7126 (Cls: 0.3732, DA: 0.6789)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [6]:  40%|####      | 100/250 [00:49<00:36,  4.07it/s, Loss=0.4668, ClsAcc=96.88%, DomainAcc=57.81%, LR=4.75e-04]Epoch [6]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.4668, ClsAcc=96.88%, DomainAcc=57.81%, LR=4.75e-04]
+Step 200/250:
+• Loss: 0.4668 (Cls: 0.1263, DA: 0.6810)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [6]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.5694, ClsAcc=93.75%, DomainAcc=57.81%, LR=4.68e-04]Epoch [6]: |          | 300/? [01:01<00:00,  5.23it/s, Loss=0.5694, ClsAcc=93.75%, DomainAcc=57.81%, LR=4.68e-04]      
+Step 250/250:
+• Loss: 0.5694 (Cls: 0.2409, DA: 0.6569)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [6]: |          | 300/? [01:01<00:00,  4.86it/s, Loss=0.5694, ClsAcc=93.75%, DomainAcc=57.81%, LR=4.68e-04]
+Test:[0/7]	Time  0.305 ( 0.305)	Loss 1.3243e+00 (1.3243e+00)
+ * Acc@1 58.182%
+Precision: 0.6379, Recall: 0.6070, F1 Score: 0.5660
+acc1 = 58.2
+lr: 0.00046827446852752626
+Epoch [7]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [7]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.4001, ClsAcc=100.00%, DomainAcc=65.62%, LR=4.56e-04]Epoch [7]:  40%|####      | 100/250 [00:23<00:35,  4.20it/s, Loss=0.4001, ClsAcc=100.00%, DomainAcc=65.62%, LR=4.56e-04]
+Step 100/250:
+• Loss: 0.4001 (Cls: 0.0814, DA: 0.6374)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [7]:  40%|####      | 100/250 [00:48<00:35,  4.20it/s, Loss=0.4548, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.44e-04] Epoch [7]:  80%|########  | 200/250 [00:48<00:12,  4.10it/s, Loss=0.4548, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.44e-04]
+Step 200/250:
+• Loss: 0.4548 (Cls: 0.1352, DA: 0.6391)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [7]:  80%|########  | 200/250 [01:00<00:12,  4.10it/s, Loss=0.4716, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.39e-04]Epoch [7]: |          | 300/? [01:00<00:00,  5.36it/s, Loss=0.4716, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.39e-04]      
+Step 250/250:
+• Loss: 0.4716 (Cls: 0.1319, DA: 0.6795)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [7]: |          | 300/? [01:00<00:00,  4.96it/s, Loss=0.4716, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.39e-04]
+Test:[0/7]	Time  0.295 ( 0.295)	Loss 1.8539e+00 (1.8539e+00)
+ * Acc@1 56.364%
+Precision: 0.6072, Recall: 0.5868, F1 Score: 0.5502
+acc1 = 56.4
+lr: 0.0004386913376508308
+Epoch [8]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [8]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.5249, ClsAcc=93.75%, DomainAcc=34.38%, LR=4.28e-04]Epoch [8]:  40%|####      | 100/250 [00:25<00:37,  4.00it/s, Loss=0.5249, ClsAcc=93.75%, DomainAcc=34.38%, LR=4.28e-04]
+Step 100/250:
+• Loss: 0.5249 (Cls: 0.1773, DA: 0.6951)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [8]:  40%|####      | 100/250 [00:49<00:37,  4.00it/s, Loss=0.4683, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.18e-04]Epoch [8]:  80%|########  | 200/250 [00:49<00:12,  4.03it/s, Loss=0.4683, ClsAcc=96.88%, DomainAcc=54.69%, LR=4.18e-04]
+Step 200/250:
+• Loss: 0.4683 (Cls: 0.1304, DA: 0.6759)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [8]:  80%|########  | 200/250 [01:02<00:12,  4.03it/s, Loss=0.3883, ClsAcc=100.00%, DomainAcc=56.25%, LR=4.13e-04]Epoch [8]: |          | 300/? [01:02<00:00,  5.17it/s, Loss=0.3883, ClsAcc=100.00%, DomainAcc=56.25%, LR=4.13e-04]      
+Step 250/250:
+• Loss: 0.3883 (Cls: 0.0338, DA: 0.7091)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [8]: |          | 300/? [01:02<00:00,  4.80it/s, Loss=0.3883, ClsAcc=100.00%, DomainAcc=56.25%, LR=4.13e-04]
+Test:[0/7]	Time  0.322 ( 0.322)	Loss 3.4880e+00 (3.4880e+00)
+ * Acc@1 60.909%
+Precision: 0.6391, Recall: 0.6263, F1 Score: 0.6044
+acc1 = 60.9
+lr: 0.0004131307098896385
+Epoch [9]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [9]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3992, ClsAcc=100.00%, DomainAcc=51.56%, LR=4.04e-04]Epoch [9]:  40%|####      | 100/250 [00:25<00:37,  3.98it/s, Loss=0.3992, ClsAcc=100.00%, DomainAcc=51.56%, LR=4.04e-04]
+Step 100/250:
+• Loss: 0.3992 (Cls: 0.0475, DA: 0.7032)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [9]:  40%|####      | 100/250 [00:50<00:37,  3.98it/s, Loss=0.4801, ClsAcc=96.88%, DomainAcc=50.00%, LR=3.95e-04] Epoch [9]:  80%|########  | 200/250 [00:50<00:12,  3.98it/s, Loss=0.4801, ClsAcc=96.88%, DomainAcc=50.00%, LR=3.95e-04]
+Step 200/250:
+• Loss: 0.4801 (Cls: 0.1340, DA: 0.6922)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [9]:  80%|########  | 200/250 [01:02<00:12,  3.98it/s, Loss=0.3782, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.91e-04]Epoch [9]: |          | 300/? [01:02<00:00,  5.25it/s, Loss=0.3782, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.91e-04]      
+Step 250/250:
+• Loss: 0.3782 (Cls: 0.0320, DA: 0.6925)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [9]: |          | 300/? [01:02<00:00,  4.83it/s, Loss=0.3782, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.91e-04]
+Test:[0/7]	Time  0.304 ( 0.304)	Loss 1.7126e+00 (1.7126e+00)
+ * Acc@1 56.364%
+Precision: 0.6143, Recall: 0.5886, F1 Score: 0.5471
+acc1 = 56.4
+lr: 0.00039079497139068016
+Epoch [10]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [10]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3994, ClsAcc=96.88%, DomainAcc=53.12%, LR=3.83e-04]Epoch [10]:  40%|####      | 100/250 [00:24<00:36,  4.10it/s, Loss=0.3994, ClsAcc=96.88%, DomainAcc=53.12%, LR=3.83e-04]
+Step 100/250:
+• Loss: 0.3994 (Cls: 0.0556, DA: 0.6875)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [10]:  40%|####      | 100/250 [00:49<00:36,  4.10it/s, Loss=0.3769, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.75e-04]Epoch [10]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.3769, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.75e-04]
+Step 200/250:
+• Loss: 0.3769 (Cls: 0.0303, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [10]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.4206, ClsAcc=96.88%, DomainAcc=51.56%, LR=3.71e-04] Epoch [10]: |          | 300/? [01:01<00:00,  5.29it/s, Loss=0.4206, ClsAcc=96.88%, DomainAcc=51.56%, LR=3.71e-04]      
+Step 250/250:
+• Loss: 0.4206 (Cls: 0.0729, DA: 0.6952)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [10]: |          | 300/? [01:01<00:00,  4.90it/s, Loss=0.4206, ClsAcc=96.88%, DomainAcc=51.56%, LR=3.71e-04]
+Test:[0/7]	Time  0.318 ( 0.318)	Loss 1.5845e+00 (1.5845e+00)
+ * Acc@1 56.818%
+Precision: 0.6112, Recall: 0.5909, F1 Score: 0.5556
+acc1 = 56.8
+lr: 0.0003710876911618321
+Epoch [11]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [11]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3663, ClsAcc=100.00%, DomainAcc=50.00%, LR=3.64e-04]Epoch [11]:  40%|####      | 100/250 [00:24<00:36,  4.11it/s, Loss=0.3663, ClsAcc=100.00%, DomainAcc=50.00%, LR=3.64e-04]
+Step 100/250:
+• Loss: 0.3663 (Cls: 0.0195, DA: 0.6936)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [11]:  40%|####      | 100/250 [00:49<00:36,  4.11it/s, Loss=0.4727, ClsAcc=96.88%, DomainAcc=57.81%, LR=3.57e-04] Epoch [11]:  80%|########  | 200/250 [00:49<00:12,  4.04it/s, Loss=0.4727, ClsAcc=96.88%, DomainAcc=57.81%, LR=3.57e-04]
+Step 200/250:
+• Loss: 0.4727 (Cls: 0.1267, DA: 0.6920)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [11]:  80%|########  | 200/250 [01:01<00:12,  4.04it/s, Loss=0.4586, ClsAcc=96.88%, DomainAcc=46.88%, LR=3.54e-04]Epoch [11]: |          | 300/? [01:01<00:00,  5.25it/s, Loss=0.4586, ClsAcc=96.88%, DomainAcc=46.88%, LR=3.54e-04]      
+Step 250/250:
+• Loss: 0.4586 (Cls: 0.1121, DA: 0.6930)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [11]: |          | 300/? [01:01<00:00,  4.87it/s, Loss=0.4586, ClsAcc=96.88%, DomainAcc=46.88%, LR=3.54e-04]
+Test:[0/7]	Time  0.326 ( 0.326)	Loss 2.9300e+00 (2.9300e+00)
+ * Acc@1 54.091%
+Precision: 0.5702, Recall: 0.5606, F1 Score: 0.5316
+acc1 = 54.1
+lr: 0.0003535533905932738
+Epoch [12]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [12]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.4798, ClsAcc=96.88%, DomainAcc=50.00%, LR=3.47e-04]Epoch [12]:  40%|####      | 100/250 [00:24<00:36,  4.15it/s, Loss=0.4798, ClsAcc=96.88%, DomainAcc=50.00%, LR=3.47e-04]
+Step 100/250:
+• Loss: 0.4798 (Cls: 0.1336, DA: 0.6923)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [12]:  40%|####      | 100/250 [00:49<00:36,  4.15it/s, Loss=0.4341, ClsAcc=96.88%, DomainAcc=56.25%, LR=3.41e-04]Epoch [12]:  80%|########  | 200/250 [00:49<00:12,  4.05it/s, Loss=0.4341, ClsAcc=96.88%, DomainAcc=56.25%, LR=3.41e-04]
+Step 200/250:
+• Loss: 0.4341 (Cls: 0.0894, DA: 0.6894)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [12]:  80%|########  | 200/250 [01:01<00:12,  4.05it/s, Loss=0.7436, ClsAcc=90.62%, DomainAcc=46.88%, LR=3.38e-04]Epoch [12]: |          | 300/? [01:01<00:00,  5.28it/s, Loss=0.7436, ClsAcc=90.62%, DomainAcc=46.88%, LR=3.38e-04]      
+Step 250/250:
+• Loss: 0.7436 (Cls: 0.3978, DA: 0.6915)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [12]: |          | 300/? [01:01<00:00,  4.89it/s, Loss=0.7436, ClsAcc=90.62%, DomainAcc=46.88%, LR=3.38e-04]
+Test:[0/7]	Time  0.307 ( 0.307)	Loss 1.6609e+00 (1.6609e+00)
+ * Acc@1 58.636%
+Precision: 0.6461, Recall: 0.6120, F1 Score: 0.5699
+acc1 = 58.6
+lr: 0.0003378378483559883
+Epoch [13]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [13]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3757, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.32e-04]Epoch [13]:  40%|####      | 100/250 [00:24<00:36,  4.11it/s, Loss=0.3757, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.32e-04]
+Step 100/250:
+• Loss: 0.3757 (Cls: 0.0318, DA: 0.6879)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [13]:  40%|####      | 100/250 [00:48<00:36,  4.11it/s, Loss=0.3763, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.26e-04]Epoch [13]:  80%|########  | 200/250 [00:48<00:12,  4.11it/s, Loss=0.3763, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.26e-04]
+Step 200/250:
+• Loss: 0.3763 (Cls: 0.0258, DA: 0.7008)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [13]:  80%|########  | 200/250 [01:01<00:12,  4.11it/s, Loss=0.3667, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.24e-04]Epoch [13]: |          | 300/? [01:01<00:00,  5.24it/s, Loss=0.3667, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.24e-04]      
+Step 250/250:
+• Loss: 0.3667 (Cls: 0.0176, DA: 0.6984)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [13]: |          | 300/? [01:01<00:00,  4.88it/s, Loss=0.3667, ClsAcc=100.00%, DomainAcc=53.12%, LR=3.24e-04]
+Test:[0/7]	Time  0.312 ( 0.312)	Loss 3.2135e+00 (3.2135e+00)
+ * Acc@1 58.182%
+Precision: 0.6042, Recall: 0.5969, F1 Score: 0.5783
+acc1 = 58.2
+lr: 0.00032366118113821564
+Epoch [14]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [14]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.4794, ClsAcc=96.88%, DomainAcc=42.19%, LR=3.18e-04]Epoch [14]:  40%|####      | 100/250 [00:24<00:36,  4.13it/s, Loss=0.4794, ClsAcc=96.88%, DomainAcc=42.19%, LR=3.18e-04]
+Step 100/250:
+• Loss: 0.4794 (Cls: 0.1313, DA: 0.6961)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [14]:  40%|####      | 100/250 [00:48<00:36,  4.13it/s, Loss=0.3712, ClsAcc=100.00%, DomainAcc=45.31%, LR=3.13e-04]Epoch [14]:  80%|########  | 200/250 [00:48<00:12,  4.08it/s, Loss=0.3712, ClsAcc=100.00%, DomainAcc=45.31%, LR=3.13e-04]
+Step 200/250:
+• Loss: 0.3712 (Cls: 0.0223, DA: 0.6978)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [14]:  80%|########  | 200/250 [01:01<00:12,  4.08it/s, Loss=0.3704, ClsAcc=100.00%, DomainAcc=56.25%, LR=3.11e-04]Epoch [14]: |          | 300/? [01:01<00:00,  5.26it/s, Loss=0.3704, ClsAcc=100.00%, DomainAcc=56.25%, LR=3.11e-04]      
+Step 250/250:
+• Loss: 0.3704 (Cls: 0.0239, DA: 0.6929)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [14]: |          | 300/? [01:01<00:00,  4.89it/s, Loss=0.3704, ClsAcc=100.00%, DomainAcc=56.25%, LR=3.11e-04]
+Test:[0/7]	Time  0.311 ( 0.311)	Loss 2.1895e+00 (2.1895e+00)
+ * Acc@1 55.455%
+Precision: 0.5929, Recall: 0.5767, F1 Score: 0.5423
+acc1 = 55.5
+lr: 0.000310799128814441
+Epoch [15]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [15]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3674, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.06e-04]Epoch [15]:  40%|####      | 100/250 [00:24<00:36,  4.12it/s, Loss=0.3674, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.06e-04]
+Step 100/250:
+• Loss: 0.3674 (Cls: 0.0204, DA: 0.6938)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [15]:  40%|####      | 100/250 [00:49<00:36,  4.12it/s, Loss=0.3651, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.01e-04]Epoch [15]:  80%|########  | 200/250 [00:49<00:12,  4.00it/s, Loss=0.3651, ClsAcc=100.00%, DomainAcc=46.88%, LR=3.01e-04]
+Step 200/250:
+• Loss: 0.3651 (Cls: 0.0178, DA: 0.6947)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [15]:  80%|########  | 200/250 [01:01<00:12,  4.00it/s, Loss=0.3672, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.99e-04]Epoch [15]: |          | 300/? [01:01<00:00,  5.29it/s, Loss=0.3672, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.99e-04]      
+Step 250/250:
+• Loss: 0.3672 (Cls: 0.0177, DA: 0.6990)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [15]: |          | 300/? [01:01<00:00,  4.88it/s, Loss=0.3672, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.99e-04]
+Test:[0/7]	Time  0.301 ( 0.301)	Loss 1.8695e+00 (1.8695e+00)
+ * Acc@1 54.091%
+Precision: 0.5802, Recall: 0.5643, F1 Score: 0.5260
+acc1 = 54.1
+lr: 0.0002990697562442441
+Epoch [16]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [16]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3890, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.95e-04]Epoch [16]:  40%|####      | 100/250 [00:24<00:37,  4.01it/s, Loss=0.3890, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.95e-04]
+Step 100/250:
+• Loss: 0.3890 (Cls: 0.0423, DA: 0.6933)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [16]:  40%|####      | 100/250 [00:48<00:37,  4.01it/s, Loss=0.3722, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.90e-04]Epoch [16]:  80%|########  | 200/250 [00:48<00:12,  4.11it/s, Loss=0.3722, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.90e-04]
+Step 200/250:
+• Loss: 0.3722 (Cls: 0.0256, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [16]:  80%|########  | 200/250 [01:01<00:12,  4.11it/s, Loss=0.4830, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.88e-04] Epoch [16]: |          | 300/? [01:01<00:00,  5.23it/s, Loss=0.4830, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.88e-04]      
+Step 250/250:
+• Loss: 0.4830 (Cls: 0.1363, DA: 0.6934)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [16]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.4830, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.88e-04]
+Test:[0/7]	Time  0.345 ( 0.345)	Loss 2.0751e+00 (2.0751e+00)
+ * Acc@1 55.455%
+Precision: 0.6024, Recall: 0.5794, F1 Score: 0.5377
+acc1 = 55.5
+lr: 0.00028832381943191343
+Epoch [17]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [17]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.4864, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.84e-04]Epoch [17]:  40%|####      | 100/250 [00:23<00:35,  4.18it/s, Loss=0.4864, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.84e-04]
+Step 100/250:
+• Loss: 0.4864 (Cls: 0.1395, DA: 0.6937)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [17]:  40%|####      | 100/250 [00:48<00:35,  4.18it/s, Loss=0.4711, ClsAcc=96.88%, DomainAcc=60.94%, LR=2.80e-04]Epoch [17]:  80%|########  | 200/250 [00:48<00:12,  4.07it/s, Loss=0.4711, ClsAcc=96.88%, DomainAcc=60.94%, LR=2.80e-04]
+Step 200/250:
+• Loss: 0.4711 (Cls: 0.1246, DA: 0.6930)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [17]:  80%|########  | 200/250 [01:01<00:12,  4.07it/s, Loss=0.3663, ClsAcc=100.00%, DomainAcc=45.31%, LR=2.78e-04]Epoch [17]: |          | 300/? [01:01<00:00,  5.23it/s, Loss=0.3663, ClsAcc=100.00%, DomainAcc=45.31%, LR=2.78e-04]      
+Step 250/250:
+• Loss: 0.3663 (Cls: 0.0196, DA: 0.6934)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [17]: |          | 300/? [01:01<00:00,  4.87it/s, Loss=0.3663, ClsAcc=100.00%, DomainAcc=45.31%, LR=2.78e-04]
+Test:[0/7]	Time  0.348 ( 0.348)	Loss 2.0700e+00 (2.0700e+00)
+ * Acc@1 55.909%
+Precision: 0.6141, Recall: 0.5854, F1 Score: 0.5398
+acc1 = 55.9
+lr: 0.000278437664873526
+Epoch [18]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [18]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3696, ClsAcc=100.00%, DomainAcc=57.81%, LR=2.75e-04]Epoch [18]:  40%|####      | 100/250 [00:24<00:36,  4.11it/s, Loss=0.3696, ClsAcc=100.00%, DomainAcc=57.81%, LR=2.75e-04]
+Step 100/250:
+• Loss: 0.3696 (Cls: 0.0241, DA: 0.6909)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [18]:  40%|####      | 100/250 [00:49<00:36,  4.11it/s, Loss=0.3647, ClsAcc=100.00%, DomainAcc=59.38%, LR=2.71e-04]Epoch [18]:  80%|########  | 200/250 [00:49<00:12,  4.05it/s, Loss=0.3647, ClsAcc=100.00%, DomainAcc=59.38%, LR=2.71e-04]
+Step 200/250:
+• Loss: 0.3647 (Cls: 0.0185, DA: 0.6924)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [18]:  80%|########  | 200/250 [01:00<00:12,  4.05it/s, Loss=0.3659, ClsAcc=100.00%, DomainAcc=50.00%, LR=2.69e-04]Epoch [18]: |          | 300/? [01:00<00:00,  5.33it/s, Loss=0.3659, ClsAcc=100.00%, DomainAcc=50.00%, LR=2.69e-04]      
+Step 250/250:
+• Loss: 0.3659 (Cls: 0.0174, DA: 0.6970)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [18]: |          | 300/? [01:00<00:00,  4.92it/s, Loss=0.3659, ClsAcc=100.00%, DomainAcc=50.00%, LR=2.69e-04]
+Test:[0/7]	Time  0.325 ( 0.325)	Loss 1.2964e+00 (1.2964e+00)
+ * Acc@1 55.909%
+Precision: 0.6229, Recall: 0.5872, F1 Score: 0.5361
+acc1 = 55.9
+lr: 0.000269307914320215
+Epoch [19]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [19]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3625, ClsAcc=100.00%, DomainAcc=51.56%, LR=2.66e-04]Epoch [19]:  40%|####      | 100/250 [00:25<00:37,  3.99it/s, Loss=0.3625, ClsAcc=100.00%, DomainAcc=51.56%, LR=2.66e-04]
+Step 100/250:
+• Loss: 0.3625 (Cls: 0.0158, DA: 0.6933)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [19]:  40%|####      | 100/250 [00:49<00:37,  3.99it/s, Loss=0.3618, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.62e-04]Epoch [19]:  80%|########  | 200/250 [00:49<00:12,  4.04it/s, Loss=0.3618, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.62e-04]
+Step 200/250:
+• Loss: 0.3618 (Cls: 0.0152, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [19]:  80%|########  | 200/250 [01:02<00:12,  4.04it/s, Loss=0.3694, ClsAcc=100.00%, DomainAcc=51.56%, LR=2.61e-04]Epoch [19]: |          | 300/? [01:02<00:00,  5.19it/s, Loss=0.3694, ClsAcc=100.00%, DomainAcc=51.56%, LR=2.61e-04]      
+Step 250/250:
+• Loss: 0.3694 (Cls: 0.0227, DA: 0.6933)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [19]: |          | 300/? [01:02<00:00,  4.81it/s, Loss=0.3694, ClsAcc=100.00%, DomainAcc=51.56%, LR=2.61e-04]
+Test:[0/7]	Time  0.332 ( 0.332)	Loss 1.5348e+00 (1.5348e+00)
+ * Acc@1 57.273%
+Precision: 0.6303, Recall: 0.5987, F1 Score: 0.5549
+acc1 = 57.3
+lr: 0.00026084743001221456
+Epoch [20]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [20]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3621, ClsAcc=100.00%, DomainAcc=46.88%, LR=2.58e-04]Epoch [20]:  40%|####      | 100/250 [00:24<00:36,  4.09it/s, Loss=0.3621, ClsAcc=100.00%, DomainAcc=46.88%, LR=2.58e-04]
+Step 100/250:
+• Loss: 0.3621 (Cls: 0.0155, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [20]:  40%|####      | 100/250 [00:49<00:36,  4.09it/s, Loss=0.3682, ClsAcc=100.00%, DomainAcc=57.81%, LR=2.55e-04]Epoch [20]:  80%|########  | 200/250 [00:49<00:12,  4.01it/s, Loss=0.3682, ClsAcc=100.00%, DomainAcc=57.81%, LR=2.55e-04]
+Step 200/250:
+• Loss: 0.3682 (Cls: 0.0216, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [20]:  80%|########  | 200/250 [01:02<00:12,  4.01it/s, Loss=0.4842, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.53e-04] Epoch [20]: |          | 300/? [01:02<00:00,  5.16it/s, Loss=0.4842, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.53e-04]      
+Step 250/250:
+• Loss: 0.4842 (Cls: 0.1376, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [20]: |          | 300/? [01:02<00:00,  4.80it/s, Loss=0.4842, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.53e-04]
+Test:[0/7]	Time  0.305 ( 0.305)	Loss 1.5973e+00 (1.5973e+00)
+ * Acc@1 55.455%
+Precision: 0.6024, Recall: 0.5794, F1 Score: 0.5377
+acc1 = 55.5
+lr: 0.00025298221281347036
+Epoch [21]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [21]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.4815, ClsAcc=96.88%, DomainAcc=62.50%, LR=2.50e-04]Epoch [21]:  40%|####      | 100/250 [00:24<00:36,  4.08it/s, Loss=0.4815, ClsAcc=96.88%, DomainAcc=62.50%, LR=2.50e-04]
+Step 100/250:
+• Loss: 0.4815 (Cls: 0.1350, DA: 0.6928)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [21]:  40%|####      | 100/250 [00:49<00:36,  4.08it/s, Loss=0.4794, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.47e-04]Epoch [21]:  80%|########  | 200/250 [00:49<00:12,  4.07it/s, Loss=0.4794, ClsAcc=96.88%, DomainAcc=46.88%, LR=2.47e-04]
+Step 200/250:
+• Loss: 0.4794 (Cls: 0.1323, DA: 0.6942)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [21]:  80%|########  | 200/250 [01:01<00:12,  4.07it/s, Loss=0.5890, ClsAcc=93.75%, DomainAcc=46.88%, LR=2.46e-04]Epoch [21]: |          | 300/? [01:01<00:00,  5.25it/s, Loss=0.5890, ClsAcc=93.75%, DomainAcc=46.88%, LR=2.46e-04]      
+Step 250/250:
+• Loss: 0.5890 (Cls: 0.2417, DA: 0.6945)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [21]: |          | 300/? [01:01<00:00,  4.87it/s, Loss=0.5890, ClsAcc=93.75%, DomainAcc=46.88%, LR=2.46e-04]
+Test:[0/7]	Time  0.317 ( 0.317)	Loss 1.5027e+00 (1.5027e+00)
+ * Acc@1 57.273%
+Precision: 0.6261, Recall: 0.5978, F1 Score: 0.5566
+acc1 = 57.3
+lr: 0.0002456489898134416
+Epoch [22]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [22]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3848, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.43e-04]Epoch [22]:  40%|####      | 100/250 [00:25<00:38,  3.89it/s, Loss=0.3848, ClsAcc=100.00%, DomainAcc=42.19%, LR=2.43e-04]
+Step 100/250:
+• Loss: 0.3848 (Cls: 0.0146, DA: 0.7403)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [22]:  40%|####      | 100/250 [00:49<00:38,  3.89it/s, Loss=0.4818, ClsAcc=96.88%, DomainAcc=45.31%, LR=2.40e-04] Epoch [22]:  80%|########  | 200/250 [00:49<00:12,  4.05it/s, Loss=0.4818, ClsAcc=96.88%, DomainAcc=45.31%, LR=2.40e-04]
+Step 200/250:
+• Loss: 0.4818 (Cls: 0.1339, DA: 0.6957)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [22]:  80%|########  | 200/250 [01:02<00:12,  4.05it/s, Loss=0.3698, ClsAcc=100.00%, DomainAcc=40.62%, LR=2.39e-04]Epoch [22]: |          | 300/? [01:02<00:00,  5.15it/s, Loss=0.3698, ClsAcc=100.00%, DomainAcc=40.62%, LR=2.39e-04]      
+Step 250/250:
+• Loss: 0.3698 (Cls: 0.0223, DA: 0.6950)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [22]: |          | 300/? [01:02<00:00,  4.78it/s, Loss=0.3698, ClsAcc=100.00%, DomainAcc=40.62%, LR=2.39e-04]
+Test:[0/7]	Time  0.316 ( 0.316)	Loss 2.5355e+00 (2.5355e+00)
+ * Acc@1 58.636%
+Precision: 0.6266, Recall: 0.6074, F1 Score: 0.5768
+acc1 = 58.6
+lr: 0.00023879331818300932
+Epoch [23]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [23]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.3598, ClsAcc=100.00%, DomainAcc=59.38%, LR=2.36e-04]Epoch [23]:  40%|####      | 100/250 [00:23<00:35,  4.25it/s, Loss=0.3598, ClsAcc=100.00%, DomainAcc=59.38%, LR=2.36e-04]
+Step 100/250:
+• Loss: 0.3598 (Cls: 0.0151, DA: 0.6894)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [23]:  40%|####      | 100/250 [00:48<00:35,  4.25it/s, Loss=0.4764, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.34e-04] Epoch [23]:  80%|########  | 200/250 [00:48<00:12,  4.06it/s, Loss=0.4764, ClsAcc=96.88%, DomainAcc=53.12%, LR=2.34e-04]
+Step 200/250:
+• Loss: 0.4764 (Cls: 0.1298, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [23]:  80%|########  | 200/250 [01:00<00:12,  4.06it/s, Loss=0.4752, ClsAcc=96.88%, DomainAcc=43.75%, LR=2.32e-04]Epoch [23]: |          | 300/? [01:00<00:00,  5.32it/s, Loss=0.4752, ClsAcc=96.88%, DomainAcc=43.75%, LR=2.32e-04]      
+Step 250/250:
+• Loss: 0.4752 (Cls: 0.1284, DA: 0.6935)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [23]: |          | 300/? [01:00<00:00,  4.93it/s, Loss=0.4752, ClsAcc=96.88%, DomainAcc=43.75%, LR=2.32e-04]
+Test:[0/7]	Time  0.332 ( 0.332)	Loss 2.1140e+00 (2.1140e+00)
+ * Acc@1 56.364%
+Precision: 0.6072, Recall: 0.5868, F1 Score: 0.5502
+acc1 = 56.4
+lr: 0.00023236808024254082
+Epoch [24]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [24]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3623, ClsAcc=100.00%, DomainAcc=62.50%, LR=2.30e-04]Epoch [24]:  40%|####      | 100/250 [00:24<00:37,  4.01it/s, Loss=0.3623, ClsAcc=100.00%, DomainAcc=62.50%, LR=2.30e-04]
+Step 100/250:
+• Loss: 0.3623 (Cls: 0.0167, DA: 0.6913)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [24]:  40%|####      | 100/250 [00:49<00:37,  4.01it/s, Loss=0.4806, ClsAcc=96.88%, DomainAcc=50.00%, LR=2.28e-04] Epoch [24]:  80%|########  | 200/250 [00:49<00:12,  4.08it/s, Loss=0.4806, ClsAcc=96.88%, DomainAcc=50.00%, LR=2.28e-04]
+Step 200/250:
+• Loss: 0.4806 (Cls: 0.1340, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [24]:  80%|########  | 200/250 [01:02<00:12,  4.08it/s, Loss=0.3607, ClsAcc=100.00%, DomainAcc=54.69%, LR=2.26e-04]Epoch [24]: |          | 300/? [01:02<00:00,  5.20it/s, Loss=0.3607, ClsAcc=100.00%, DomainAcc=54.69%, LR=2.26e-04]      
+Step 250/250:
+• Loss: 0.3607 (Cls: 0.0141, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [24]: |          | 300/? [01:02<00:00,  4.83it/s, Loss=0.3607, ClsAcc=100.00%, DomainAcc=54.69%, LR=2.26e-04]
+Test:[0/7]	Time  0.312 ( 0.312)	Loss 2.0893e+00 (2.0893e+00)
+ * Acc@1 55.909%
+Precision: 0.6141, Recall: 0.5854, F1 Score: 0.5398
+acc1 = 55.9
+lr: 0.00022633227826974423
+Epoch [25]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [25]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.6055, ClsAcc=93.75%, DomainAcc=51.56%, LR=2.24e-04]Epoch [25]:  40%|####      | 100/250 [00:24<00:36,  4.12it/s, Loss=0.6055, ClsAcc=93.75%, DomainAcc=51.56%, LR=2.24e-04]
+Step 100/250:
+• Loss: 0.6055 (Cls: 0.2589, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [25]:  40%|####      | 100/250 [00:49<00:36,  4.12it/s, Loss=0.3603, ClsAcc=100.00%, DomainAcc=50.00%, LR=2.22e-04]Epoch [25]:  80%|########  | 200/250 [00:49<00:12,  4.07it/s, Loss=0.3603, ClsAcc=100.00%, DomainAcc=50.00%, LR=2.22e-04]
+Step 200/250:
+• Loss: 0.3603 (Cls: 0.0138, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [25]:  80%|########  | 200/250 [01:01<00:12,  4.07it/s, Loss=0.3606, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.21e-04]Epoch [25]: |          | 300/? [01:01<00:00,  5.20it/s, Loss=0.3606, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.21e-04]      
+Step 250/250:
+• Loss: 0.3606 (Cls: 0.0141, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [25]: |          | 300/? [01:01<00:00,  4.84it/s, Loss=0.3606, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.21e-04]
+Test:[0/7]	Time  0.331 ( 0.331)	Loss 1.6284e+00 (1.6284e+00)
+ * Acc@1 55.455%
+Precision: 0.6100, Recall: 0.5813, F1 Score: 0.5342
+acc1 = 55.5
+lr: 0.00022065006130979155
+Epoch [26]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [26]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3678, ClsAcc=100.00%, DomainAcc=43.75%, LR=2.18e-04]Epoch [26]:  40%|####      | 100/250 [00:24<00:37,  4.00it/s, Loss=0.3678, ClsAcc=100.00%, DomainAcc=43.75%, LR=2.18e-04]
+Step 100/250:
+• Loss: 0.3678 (Cls: 0.0212, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [26]:  40%|####      | 100/250 [00:50<00:37,  4.00it/s, Loss=0.3650, ClsAcc=100.00%, DomainAcc=54.69%, LR=2.16e-04]Epoch [26]:  80%|########  | 200/250 [00:50<00:12,  3.99it/s, Loss=0.3650, ClsAcc=100.00%, DomainAcc=54.69%, LR=2.16e-04]
+Step 200/250:
+• Loss: 0.3650 (Cls: 0.0185, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [26]:  80%|########  | 200/250 [01:01<00:12,  3.99it/s, Loss=0.3643, ClsAcc=100.00%, DomainAcc=56.25%, LR=2.15e-04]Epoch [26]: |          | 300/? [01:01<00:00,  5.27it/s, Loss=0.3643, ClsAcc=100.00%, DomainAcc=56.25%, LR=2.15e-04]      
+Step 250/250:
+• Loss: 0.3643 (Cls: 0.0177, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [26]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.3643, ClsAcc=100.00%, DomainAcc=56.25%, LR=2.15e-04]
+Test:[0/7]	Time  0.325 ( 0.325)	Loss 1.6360e+00 (1.6360e+00)
+ * Acc@1 56.364%
+Precision: 0.6143, Recall: 0.5886, F1 Score: 0.5471
+acc1 = 56.4
+lr: 0.0002152899332568719
+Epoch [27]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [27]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3657, ClsAcc=100.00%, DomainAcc=40.62%, LR=2.13e-04]Epoch [27]:  40%|####      | 100/250 [00:24<00:36,  4.06it/s, Loss=0.3657, ClsAcc=100.00%, DomainAcc=40.62%, LR=2.13e-04]
+Step 100/250:
+• Loss: 0.3657 (Cls: 0.0192, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [27]:  40%|####      | 100/250 [00:49<00:36,  4.06it/s, Loss=0.7125, ClsAcc=90.62%, DomainAcc=48.44%, LR=2.11e-04] Epoch [27]:  80%|########  | 200/250 [00:49<00:12,  4.07it/s, Loss=0.7125, ClsAcc=90.62%, DomainAcc=48.44%, LR=2.11e-04]
+Step 200/250:
+• Loss: 0.7125 (Cls: 0.3659, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [27]:  80%|########  | 200/250 [01:01<00:12,  4.07it/s, Loss=0.3605, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.10e-04]Epoch [27]: |          | 300/? [01:01<00:00,  5.27it/s, Loss=0.3605, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.10e-04]      
+Step 250/250:
+• Loss: 0.3605 (Cls: 0.0140, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [27]: |          | 300/? [01:01<00:00,  4.88it/s, Loss=0.3605, ClsAcc=100.00%, DomainAcc=48.44%, LR=2.10e-04]
+Test:[0/7]	Time  0.313 ( 0.313)	Loss 1.5176e+00 (1.5176e+00)
+ * Acc@1 56.364%
+Precision: 0.6182, Recall: 0.5895, F1 Score: 0.5455
+acc1 = 56.4
+lr: 0.00021022410381342862
+Epoch [28]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [28]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.3639, ClsAcc=100.00%, DomainAcc=37.50%, LR=2.08e-04]Epoch [28]:  40%|####      | 100/250 [00:23<00:35,  4.17it/s, Loss=0.3639, ClsAcc=100.00%, DomainAcc=37.50%, LR=2.08e-04]
+Step 100/250:
+• Loss: 0.3639 (Cls: 0.0173, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [28]:  40%|####      | 100/250 [00:49<00:35,  4.17it/s, Loss=0.5892, ClsAcc=93.75%, DomainAcc=43.75%, LR=2.06e-04] Epoch [28]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.5892, ClsAcc=93.75%, DomainAcc=43.75%, LR=2.06e-04]
+Step 200/250:
+• Loss: 0.5892 (Cls: 0.2426, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [28]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.4808, ClsAcc=96.88%, DomainAcc=51.56%, LR=2.05e-04]Epoch [28]: |          | 300/? [01:01<00:00,  5.25it/s, Loss=0.4808, ClsAcc=96.88%, DomainAcc=51.56%, LR=2.05e-04]      
+Step 250/250:
+• Loss: 0.4808 (Cls: 0.1342, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [28]: |          | 300/? [01:01<00:00,  4.88it/s, Loss=0.4808, ClsAcc=96.88%, DomainAcc=51.56%, LR=2.05e-04]
+Test:[0/7]	Time  0.315 ( 0.315)	Loss 2.3550e+00 (2.3550e+00)
+ * Acc@1 55.909%
+Precision: 0.6031, Recall: 0.5826, F1 Score: 0.5448
+acc1 = 55.9
+lr: 0.00020542795298607238
+Epoch [29]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [29]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=1.1180, ClsAcc=34.38%, DomainAcc=50.00%, LR=2.04e-04]Epoch [29]:  40%|####      | 100/250 [00:25<00:37,  4.00it/s, Loss=1.1180, ClsAcc=34.38%, DomainAcc=50.00%, LR=2.04e-04]
+Step 100/250:
+• Loss: 1.1180 (Cls: 0.7714, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [29]:  40%|####      | 100/250 [00:48<00:37,  4.00it/s, Loss=0.9479, ClsAcc=71.88%, DomainAcc=62.50%, LR=2.02e-04]Epoch [29]:  80%|########  | 200/250 [00:48<00:12,  4.11it/s, Loss=0.9479, ClsAcc=71.88%, DomainAcc=62.50%, LR=2.02e-04]
+Step 200/250:
+• Loss: 0.9479 (Cls: 0.6014, DA: 0.6930)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [29]:  80%|########  | 200/250 [01:01<00:12,  4.11it/s, Loss=0.8181, ClsAcc=68.75%, DomainAcc=68.75%, LR=2.01e-04]Epoch [29]: |          | 300/? [01:01<00:00,  5.25it/s, Loss=0.8181, ClsAcc=68.75%, DomainAcc=68.75%, LR=2.01e-04]      
+Step 250/250:
+• Loss: 0.8181 (Cls: 0.5014, DA: 0.6334)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [29]: |          | 300/? [01:01<00:00,  4.87it/s, Loss=0.8181, ClsAcc=68.75%, DomainAcc=68.75%, LR=2.01e-04]
+Test:[0/7]	Time  0.319 ( 0.319)	Loss 2.2621e-01 (2.2621e-01)
+ * Acc@1 51.364%
+Precision: 0.6356, Recall: 0.5533, F1 Score: 0.4497
+acc1 = 51.4
+lr: 0.0002008795864910758
+Epoch [30]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [30]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3443, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.99e-04]Epoch [30]:  40%|####      | 100/250 [00:24<00:37,  4.05it/s, Loss=0.3443, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.99e-04]
+Step 100/250:
+• Loss: 0.3443 (Cls: 0.0135, DA: 0.6615)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [30]:  40%|####      | 100/250 [00:49<00:37,  4.05it/s, Loss=0.3397, ClsAcc=100.00%, DomainAcc=64.06%, LR=1.97e-04]Epoch [30]:  80%|########  | 200/250 [00:49<00:12,  4.05it/s, Loss=0.3397, ClsAcc=100.00%, DomainAcc=64.06%, LR=1.97e-04]
+Step 200/250:
+• Loss: 0.3397 (Cls: 0.0110, DA: 0.6574)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [30]:  80%|########  | 200/250 [01:01<00:12,  4.05it/s, Loss=0.3459, ClsAcc=100.00%, DomainAcc=68.75%, LR=1.97e-04]Epoch [30]: |          | 300/? [01:01<00:00,  5.27it/s, Loss=0.3459, ClsAcc=100.00%, DomainAcc=68.75%, LR=1.97e-04]      
+Step 250/250:
+• Loss: 0.3459 (Cls: 0.0125, DA: 0.6668)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [30]: |          | 300/? [01:01<00:00,  4.87it/s, Loss=0.3459, ClsAcc=100.00%, DomainAcc=68.75%, LR=1.97e-04]
+Test:[0/7]	Time  0.324 ( 0.324)	Loss 1.2600e+00 (1.2600e+00)
+ * Acc@1 55.455%
+Precision: 0.5958, Recall: 0.5776, F1 Score: 0.5408
+acc1 = 55.5
+lr: 0.000196559464471451
+Epoch [31]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [31]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.3614, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.95e-04]Epoch [31]:  40%|####      | 100/250 [00:23<00:35,  4.22it/s, Loss=0.3614, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.95e-04]
+Step 100/250:
+• Loss: 0.3614 (Cls: 0.0143, DA: 0.6942)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [31]:  40%|####      | 100/250 [00:47<00:35,  4.22it/s, Loss=0.3533, ClsAcc=100.00%, DomainAcc=60.94%, LR=1.93e-04]Epoch [31]:  80%|########  | 200/250 [00:47<00:11,  4.18it/s, Loss=0.3533, ClsAcc=100.00%, DomainAcc=60.94%, LR=1.93e-04]
+Step 200/250:
+• Loss: 0.3533 (Cls: 0.0143, DA: 0.6781)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [31]:  80%|########  | 200/250 [01:00<00:11,  4.18it/s, Loss=0.4895, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.92e-04] Epoch [31]: |          | 300/? [01:00<00:00,  5.29it/s, Loss=0.4895, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.92e-04]      
+Step 250/250:
+• Loss: 0.4895 (Cls: 0.1443, DA: 0.6904)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [31]: |          | 300/? [01:00<00:00,  4.94it/s, Loss=0.4895, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.92e-04]
+Test:[0/7]	Time  0.323 ( 0.323)	Loss 1.5703e+00 (1.5703e+00)
+ * Acc@1 50.909%
+Precision: 0.5629, Recall: 0.5399, F1 Score: 0.4751
+acc1 = 50.9
+lr: 0.00019245008972987527
+Epoch [32]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [32]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.4737, ClsAcc=96.88%, DomainAcc=56.25%, LR=1.91e-04]Epoch [32]:  40%|####      | 100/250 [00:23<00:35,  4.18it/s, Loss=0.4737, ClsAcc=96.88%, DomainAcc=56.25%, LR=1.91e-04]
+Step 100/250:
+• Loss: 0.4737 (Cls: 0.1329, DA: 0.6816)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [32]:  40%|####      | 100/250 [00:49<00:35,  4.18it/s, Loss=0.3389, ClsAcc=100.00%, DomainAcc=59.38%, LR=1.89e-04]Epoch [32]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.3389, ClsAcc=100.00%, DomainAcc=59.38%, LR=1.89e-04]
+Step 200/250:
+• Loss: 0.3389 (Cls: 0.0127, DA: 0.6524)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [32]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.3551, ClsAcc=100.00%, DomainAcc=56.25%, LR=1.89e-04]Epoch [32]: |          | 300/? [01:01<00:00,  5.30it/s, Loss=0.3551, ClsAcc=100.00%, DomainAcc=56.25%, LR=1.89e-04]      
+Step 250/250:
+• Loss: 0.3551 (Cls: 0.0122, DA: 0.6859)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [32]: |          | 300/? [01:01<00:00,  4.92it/s, Loss=0.3551, ClsAcc=100.00%, DomainAcc=56.25%, LR=1.89e-04]
+Test:[0/7]	Time  0.335 ( 0.335)	Loss 2.1229e+00 (2.1229e+00)
+ * Acc@1 55.000%
+Precision: 0.5917, Recall: 0.5735, F1 Score: 0.5354
+acc1 = 55.0
+lr: 0.0001885357445816101
+Epoch [33]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [33]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.87e-04]Epoch [33]:  40%|####      | 100/250 [00:24<00:36,  4.08it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.87e-04]
+Step 100/250:
+• Loss: 0.3562 (Cls: 0.0107, DA: 0.6911)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [33]:  40%|####      | 100/250 [00:49<00:36,  4.08it/s, Loss=0.3484, ClsAcc=100.00%, DomainAcc=65.62%, LR=1.86e-04]Epoch [33]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.3484, ClsAcc=100.00%, DomainAcc=65.62%, LR=1.86e-04]
+Step 200/250:
+• Loss: 0.3484 (Cls: 0.0107, DA: 0.6754)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [33]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.3581, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.85e-04]Epoch [33]: |          | 300/? [01:01<00:00,  5.22it/s, Loss=0.3581, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.85e-04]      
+Step 250/250:
+• Loss: 0.3581 (Cls: 0.0115, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [33]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.3581, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.85e-04]
+Test:[0/7]	Time  0.320 ( 0.320)	Loss 1.9733e+00 (1.9733e+00)
+ * Acc@1 52.273%
+Precision: 0.5680, Recall: 0.5496, F1 Score: 0.4999
+acc1 = 52.3
+lr: 0.00018480226766139023
+Epoch [34]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [34]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.6131, ClsAcc=93.75%, DomainAcc=51.56%, LR=1.83e-04]Epoch [34]:  40%|####      | 100/250 [00:24<00:36,  4.12it/s, Loss=0.6131, ClsAcc=93.75%, DomainAcc=51.56%, LR=1.83e-04]
+Step 100/250:
+• Loss: 0.6131 (Cls: 0.2669, DA: 0.6923)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [34]:  40%|####      | 100/250 [00:48<00:36,  4.12it/s, Loss=0.4876, ClsAcc=96.88%, DomainAcc=45.31%, LR=1.82e-04]Epoch [34]:  80%|########  | 200/250 [00:48<00:12,  4.10it/s, Loss=0.4876, ClsAcc=96.88%, DomainAcc=45.31%, LR=1.82e-04]
+Step 200/250:
+• Loss: 0.4876 (Cls: 0.1363, DA: 0.7028)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [34]:  80%|########  | 200/250 [01:01<00:12,  4.10it/s, Loss=0.3776, ClsAcc=100.00%, DomainAcc=51.56%, LR=1.81e-04]Epoch [34]: |          | 300/? [01:01<00:00,  5.28it/s, Loss=0.3776, ClsAcc=100.00%, DomainAcc=51.56%, LR=1.81e-04]      
+Step 250/250:
+• Loss: 0.3776 (Cls: 0.0176, DA: 0.7200)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [34]: |          | 300/? [01:01<00:00,  4.90it/s, Loss=0.3776, ClsAcc=100.00%, DomainAcc=51.56%, LR=1.81e-04]
+Test:[0/7]	Time  0.330 ( 0.330)	Loss 2.9767e+00 (2.9767e+00)
+ * Acc@1 52.273%
+Precision: 0.5680, Recall: 0.5496, F1 Score: 0.4999
+acc1 = 52.3
+lr: 0.00018123686374612284
+Epoch [35]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [35]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3582, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.80e-04]Epoch [35]:  40%|####      | 100/250 [00:24<00:36,  4.06it/s, Loss=0.3582, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.80e-04]
+Step 100/250:
+• Loss: 0.3582 (Cls: 0.0132, DA: 0.6898)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [35]:  40%|####      | 100/250 [00:49<00:36,  4.06it/s, Loss=0.3609, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.78e-04]Epoch [35]:  80%|########  | 200/250 [00:49<00:12,  4.08it/s, Loss=0.3609, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.78e-04]
+Step 200/250:
+• Loss: 0.3609 (Cls: 0.0147, DA: 0.6926)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [35]:  80%|########  | 200/250 [01:01<00:12,  4.08it/s, Loss=0.3555, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.78e-04]Epoch [35]: |          | 300/? [01:01<00:00,  5.22it/s, Loss=0.3555, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.78e-04]      
+Step 250/250:
+• Loss: 0.3555 (Cls: 0.0124, DA: 0.6861)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [35]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.3555, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.78e-04]
+Test:[0/7]	Time  0.309 ( 0.309)	Loss 1.7719e+00 (1.7719e+00)
+ * Acc@1 51.818%
+Precision: 0.5865, Recall: 0.5510, F1 Score: 0.4795
+acc1 = 51.8
+lr: 0.0001778279410038923
+Epoch [36]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [36]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3630, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.77e-04]Epoch [36]:  40%|####      | 100/250 [00:25<00:37,  3.98it/s, Loss=0.3630, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.77e-04]
+Step 100/250:
+• Loss: 0.3630 (Cls: 0.0180, DA: 0.6900)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [36]:  40%|####      | 100/250 [00:51<00:37,  3.98it/s, Loss=0.3529, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.75e-04]Epoch [36]:  80%|########  | 200/250 [00:51<00:12,  3.90it/s, Loss=0.3529, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.75e-04]
+Step 200/250:
+• Loss: 0.3529 (Cls: 0.0107, DA: 0.6844)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [36]:  80%|########  | 200/250 [01:03<00:12,  3.90it/s, Loss=0.4886, ClsAcc=96.88%, DomainAcc=53.12%, LR=1.75e-04] Epoch [36]: |          | 300/? [01:03<00:00,  5.14it/s, Loss=0.4886, ClsAcc=96.88%, DomainAcc=53.12%, LR=1.75e-04]      
+Step 250/250:
+• Loss: 0.4886 (Cls: 0.1446, DA: 0.6881)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [36]: |          | 300/? [01:03<00:00,  4.74it/s, Loss=0.4886, ClsAcc=96.88%, DomainAcc=53.12%, LR=1.75e-04]
+Test:[0/7]	Time  0.309 ( 0.309)	Loss 3.7968e+00 (3.7968e+00)
+ * Acc@1 55.000%
+Precision: 0.5948, Recall: 0.5744, F1 Score: 0.5338
+acc1 = 55.0
+lr: 0.00017456497113967713
+Epoch [37]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [37]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3518, ClsAcc=100.00%, DomainAcc=64.06%, LR=1.73e-04]Epoch [37]:  40%|####      | 100/250 [00:25<00:38,  3.93it/s, Loss=0.3518, ClsAcc=100.00%, DomainAcc=64.06%, LR=1.73e-04]
+Step 100/250:
+• Loss: 0.3518 (Cls: 0.0088, DA: 0.6860)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [37]:  40%|####      | 100/250 [00:50<00:38,  3.93it/s, Loss=0.3622, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.72e-04]Epoch [37]:  80%|########  | 200/250 [00:50<00:12,  3.95it/s, Loss=0.3622, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.72e-04]
+Step 200/250:
+• Loss: 0.3622 (Cls: 0.0126, DA: 0.6991)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [37]:  80%|########  | 200/250 [01:03<00:12,  3.95it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=43.75%, LR=1.71e-04]Epoch [37]: |          | 300/? [01:03<00:00,  5.12it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=43.75%, LR=1.71e-04]      
+Step 250/250:
+• Loss: 0.3556 (Cls: 0.0087, DA: 0.6938)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [37]: |          | 300/? [01:03<00:00,  4.74it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=43.75%, LR=1.71e-04]
+Test:[0/7]	Time  0.325 ( 0.325)	Loss 4.2923e+00 (4.2923e+00)
+ * Acc@1 50.000%
+Precision: 0.5314, Recall: 0.5243, F1 Score: 0.4811
+acc1 = 50.0
+lr: 0.00017143836874659562
+Epoch [38]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [38]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.70e-04]Epoch [38]:  40%|####      | 100/250 [00:25<00:37,  3.96it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.70e-04]
+Step 100/250:
+• Loss: 0.3573 (Cls: 0.0107, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [38]:  40%|####      | 100/250 [00:50<00:37,  3.96it/s, Loss=0.3553, ClsAcc=100.00%, DomainAcc=56.25%, LR=1.69e-04]Epoch [38]:  80%|########  | 200/250 [00:50<00:12,  3.99it/s, Loss=0.3553, ClsAcc=100.00%, DomainAcc=56.25%, LR=1.69e-04]
+Step 200/250:
+• Loss: 0.3553 (Cls: 0.0088, DA: 0.6929)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [38]:  80%|########  | 200/250 [01:03<00:12,  3.99it/s, Loss=0.3588, ClsAcc=100.00%, DomainAcc=39.06%, LR=1.68e-04]Epoch [38]: |          | 300/? [01:03<00:00,  5.07it/s, Loss=0.3588, ClsAcc=100.00%, DomainAcc=39.06%, LR=1.68e-04]      
+Step 250/250:
+• Loss: 0.3588 (Cls: 0.0121, DA: 0.6934)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [38]: |          | 300/? [01:03<00:00,  4.72it/s, Loss=0.3588, ClsAcc=100.00%, DomainAcc=39.06%, LR=1.68e-04]
+Test:[0/7]	Time  0.306 ( 0.306)	Loss 3.7779e+00 (3.7779e+00)
+ * Acc@1 50.000%
+Precision: 0.5333, Recall: 0.5253, F1 Score: 0.4792
+acc1 = 50.0
+lr: 0.00016843938683877986
+Epoch [39]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [39]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=42.19%, LR=1.67e-04]Epoch [39]:  40%|####      | 100/250 [00:24<00:36,  4.06it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=42.19%, LR=1.67e-04]
+Step 100/250:
+• Loss: 0.3556 (Cls: 0.0088, DA: 0.6936)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [39]:  40%|####      | 100/250 [00:50<00:36,  4.06it/s, Loss=0.3565, ClsAcc=100.00%, DomainAcc=43.75%, LR=1.66e-04]Epoch [39]:  80%|########  | 200/250 [00:50<00:12,  3.90it/s, Loss=0.3565, ClsAcc=100.00%, DomainAcc=43.75%, LR=1.66e-04]
+Step 200/250:
+• Loss: 0.3565 (Cls: 0.0098, DA: 0.6934)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [39]:  80%|########  | 200/250 [01:02<00:12,  3.90it/s, Loss=0.3546, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.66e-04]Epoch [39]: |          | 300/? [01:02<00:00,  5.17it/s, Loss=0.3546, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.66e-04]      
+Step 250/250:
+• Loss: 0.3546 (Cls: 0.0080, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [39]: |          | 300/? [01:02<00:00,  4.78it/s, Loss=0.3546, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.66e-04]
+Test:[0/7]	Time  0.322 ( 0.322)	Loss 2.9485e+00 (2.9485e+00)
+ * Acc@1 50.455%
+Precision: 0.5428, Recall: 0.5312, F1 Score: 0.4809
+acc1 = 50.5
+lr: 0.00016556002607617017
+Epoch [40]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [40]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3549, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.64e-04]Epoch [40]:  40%|####      | 100/250 [00:25<00:38,  3.87it/s, Loss=0.3549, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.64e-04]
+Step 100/250:
+• Loss: 0.3549 (Cls: 0.0084, DA: 0.6930)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [40]:  40%|####      | 100/250 [00:50<00:38,  3.87it/s, Loss=0.3560, ClsAcc=100.00%, DomainAcc=37.50%, LR=1.63e-04]Epoch [40]:  80%|########  | 200/250 [00:50<00:12,  4.01it/s, Loss=0.3560, ClsAcc=100.00%, DomainAcc=37.50%, LR=1.63e-04]
+Step 200/250:
+• Loss: 0.3560 (Cls: 0.0090, DA: 0.6940)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [40]:  80%|########  | 200/250 [01:02<00:12,  4.01it/s, Loss=0.3563, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.63e-04]Epoch [40]: |          | 300/? [01:02<00:00,  5.17it/s, Loss=0.3563, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.63e-04]      
+Step 250/250:
+• Loss: 0.3563 (Cls: 0.0097, DA: 0.6933)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [40]: |          | 300/? [01:02<00:00,  4.77it/s, Loss=0.3563, ClsAcc=100.00%, DomainAcc=46.88%, LR=1.63e-04]
+Test:[0/7]	Time  0.318 ( 0.318)	Loss 2.5020e+00 (2.5020e+00)
+ * Acc@1 50.909%
+Precision: 0.5594, Recall: 0.5390, F1 Score: 0.4776
+acc1 = 50.9
+lr: 0.0001627929556215425
+Epoch [41]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [41]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.4892, ClsAcc=96.88%, DomainAcc=60.94%, LR=1.62e-04]Epoch [41]:  40%|####      | 100/250 [00:23<00:35,  4.28it/s, Loss=0.4892, ClsAcc=96.88%, DomainAcc=60.94%, LR=1.62e-04]
+Step 100/250:
+• Loss: 0.4892 (Cls: 0.1429, DA: 0.6926)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [41]:  40%|####      | 100/250 [00:48<00:35,  4.28it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.61e-04]Epoch [41]:  80%|########  | 200/250 [00:48<00:12,  4.05it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.61e-04]
+Step 200/250:
+• Loss: 0.3556 (Cls: 0.0092, DA: 0.6929)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [41]:  80%|########  | 200/250 [01:00<00:12,  4.05it/s, Loss=0.3576, ClsAcc=100.00%, DomainAcc=45.31%, LR=1.60e-04]Epoch [41]: |          | 300/? [01:00<00:00,  5.30it/s, Loss=0.3576, ClsAcc=100.00%, DomainAcc=45.31%, LR=1.60e-04]      
+Step 250/250:
+• Loss: 0.3576 (Cls: 0.0108, DA: 0.6936)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [41]: |          | 300/? [01:00<00:00,  4.92it/s, Loss=0.3576, ClsAcc=100.00%, DomainAcc=45.31%, LR=1.60e-04]
+Test:[0/7]	Time  0.307 ( 0.307)	Loss 2.2056e+00 (2.2056e+00)
+ * Acc@1 51.364%
+Precision: 0.5613, Recall: 0.5422, F1 Score: 0.4860
+acc1 = 51.4
+lr: 0.00016013144391807145
+Epoch [42]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [42]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3550, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.59e-04]Epoch [42]:  40%|####      | 100/250 [00:24<00:36,  4.13it/s, Loss=0.3550, ClsAcc=100.00%, DomainAcc=54.69%, LR=1.59e-04]
+Step 100/250:
+• Loss: 0.3550 (Cls: 0.0085, DA: 0.6928)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [42]:  40%|####      | 100/250 [00:48<00:36,  4.13it/s, Loss=0.3570, ClsAcc=100.00%, DomainAcc=60.94%, LR=1.58e-04]Epoch [42]:  80%|########  | 200/250 [00:48<00:12,  4.10it/s, Loss=0.3570, ClsAcc=100.00%, DomainAcc=60.94%, LR=1.58e-04]
+Step 200/250:
+• Loss: 0.3570 (Cls: 0.0105, DA: 0.6929)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [42]:  80%|########  | 200/250 [01:01<00:12,  4.10it/s, Loss=0.3574, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.58e-04]Epoch [42]: |          | 300/? [01:01<00:00,  5.19it/s, Loss=0.3574, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.58e-04]      
+Step 250/250:
+• Loss: 0.3574 (Cls: 0.0109, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [42]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.3574, ClsAcc=100.00%, DomainAcc=53.12%, LR=1.58e-04]
+Test:[0/7]	Time  0.314 ( 0.314)	Loss 2.6137e+00 (2.6137e+00)
+ * Acc@1 50.909%
+Precision: 0.5532, Recall: 0.5372, F1 Score: 0.4824
+acc1 = 50.9
+lr: 0.00015756929795875878
+Epoch [43]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [43]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.57e-04]Epoch [43]:  40%|####      | 100/250 [00:24<00:37,  4.02it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.57e-04]
+Step 100/250:
+• Loss: 0.3562 (Cls: 0.0097, DA: 0.6929)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [43]:  40%|####      | 100/250 [00:49<00:37,  4.02it/s, Loss=0.3561, ClsAcc=100.00%, DomainAcc=37.50%, LR=1.56e-04]Epoch [43]:  80%|########  | 200/250 [00:49<00:12,  4.06it/s, Loss=0.3561, ClsAcc=100.00%, DomainAcc=37.50%, LR=1.56e-04]
+Step 200/250:
+• Loss: 0.3561 (Cls: 0.0074, DA: 0.6973)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [43]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.3529, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.55e-04]Epoch [43]: |          | 300/? [01:01<00:00,  5.23it/s, Loss=0.3529, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.55e-04]      
+Step 250/250:
+• Loss: 0.3529 (Cls: 0.0082, DA: 0.6894)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [43]: |          | 300/? [01:01<00:00,  4.85it/s, Loss=0.3529, ClsAcc=100.00%, DomainAcc=57.81%, LR=1.55e-04]
+Test:[0/7]	Time  0.322 ( 0.322)	Loss 2.1408e+00 (2.1408e+00)
+ * Acc@1 51.364%
+Precision: 0.5682, Recall: 0.5441, F1 Score: 0.4812
+acc1 = 51.4
+lr: 0.00015510080985034995
+Epoch [44]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [44]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.4919, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.54e-04]Epoch [44]:  40%|####      | 100/250 [00:24<00:36,  4.09it/s, Loss=0.4919, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.54e-04]
+Step 100/250:
+• Loss: 0.4919 (Cls: 0.1453, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [44]:  40%|####      | 100/250 [00:50<00:36,  4.09it/s, Loss=0.3555, ClsAcc=100.00%, DomainAcc=48.44%, LR=1.53e-04]Epoch [44]:  80%|########  | 200/250 [00:50<00:12,  3.98it/s, Loss=0.3555, ClsAcc=100.00%, DomainAcc=48.44%, LR=1.53e-04]
+Step 200/250:
+• Loss: 0.3555 (Cls: 0.0089, DA: 0.6933)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [44]:  80%|########  | 200/250 [01:01<00:12,  3.98it/s, Loss=0.4896, ClsAcc=96.88%, DomainAcc=42.19%, LR=1.53e-04] Epoch [44]: |          | 300/? [01:01<00:00,  5.32it/s, Loss=0.4896, ClsAcc=96.88%, DomainAcc=42.19%, LR=1.53e-04]      
+Step 250/250:
+• Loss: 0.4896 (Cls: 0.1430, DA: 0.6932)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [44]: |          | 300/? [01:01<00:00,  4.89it/s, Loss=0.4896, ClsAcc=96.88%, DomainAcc=42.19%, LR=1.53e-04]
+Test:[0/7]	Time  0.297 ( 0.297)	Loss 2.5563e+00 (2.5563e+00)
+ * Acc@1 51.364%
+Precision: 0.5554, Recall: 0.5404, F1 Score: 0.4904
+acc1 = 51.4
+lr: 0.0001527207096642425
+Epoch [45]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [45]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.52e-04]Epoch [45]:  40%|####      | 100/250 [00:25<00:37,  3.99it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.52e-04]
+Step 100/250:
+• Loss: 0.3562 (Cls: 0.0097, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [45]:  40%|####      | 100/250 [00:50<00:37,  3.99it/s, Loss=0.3566, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.51e-04]Epoch [45]:  80%|########  | 200/250 [00:50<00:12,  4.00it/s, Loss=0.3566, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.51e-04]
+Step 200/250:
+• Loss: 0.3566 (Cls: 0.0101, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [45]:  80%|########  | 200/250 [01:02<00:12,  4.00it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.50e-04]Epoch [45]: |          | 300/? [01:02<00:00,  5.20it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.50e-04]      
+Step 250/250:
+• Loss: 0.3556 (Cls: 0.0090, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [45]: |          | 300/? [01:02<00:00,  4.81it/s, Loss=0.3556, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.50e-04]
+Test:[0/7]	Time  0.332 ( 0.332)	Loss 1.7565e+00 (1.7565e+00)
+ * Acc@1 49.545%
+Precision: 0.5458, Recall: 0.5275, F1 Score: 0.4564
+acc1 = 49.5
+lr: 0.00015042412372345574
+Epoch [46]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [46]:   0%|          | 0/250 [00:23<?, ?it/s, Loss=0.3578, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.50e-04]Epoch [46]:  40%|####      | 100/250 [00:23<00:35,  4.20it/s, Loss=0.3578, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.50e-04]
+Step 100/250:
+• Loss: 0.3578 (Cls: 0.0112, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [46]:  40%|####      | 100/250 [00:48<00:35,  4.20it/s, Loss=0.4920, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.49e-04] Epoch [46]:  80%|########  | 200/250 [00:48<00:12,  4.06it/s, Loss=0.4920, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.49e-04]
+Step 200/250:
+• Loss: 0.4920 (Cls: 0.1454, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [46]:  80%|########  | 200/250 [01:01<00:12,  4.06it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.48e-04]Epoch [46]: |          | 300/? [01:01<00:00,  5.20it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.48e-04]      
+Step 250/250:
+• Loss: 0.3573 (Cls: 0.0107, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [46]: |          | 300/? [01:01<00:00,  4.86it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.48e-04]
+Test:[0/7]	Time  0.316 ( 0.316)	Loss 2.8488e+00 (2.8488e+00)
+ * Acc@1 52.273%
+Precision: 0.5597, Recall: 0.5468, F1 Score: 0.5056
+acc1 = 52.3
+lr: 0.00014820653760436707
+Epoch [47]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [47]:   0%|          | 0/250 [00:24<?, ?it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.47e-04]Epoch [47]:  40%|####      | 100/250 [00:24<00:36,  4.16it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.47e-04]
+Step 100/250:
+• Loss: 0.3562 (Cls: 0.0096, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [47]:  40%|####      | 100/250 [00:48<00:36,  4.16it/s, Loss=0.3565, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.46e-04]Epoch [47]:  80%|########  | 200/250 [00:48<00:12,  4.11it/s, Loss=0.3565, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.46e-04]
+Step 200/250:
+• Loss: 0.3565 (Cls: 0.0099, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [47]:  80%|########  | 200/250 [01:00<00:12,  4.11it/s, Loss=0.4913, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.46e-04] Epoch [47]: |          | 300/? [01:00<00:00,  5.34it/s, Loss=0.4913, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.46e-04]      
+Step 250/250:
+• Loss: 0.4913 (Cls: 0.1447, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [47]: |          | 300/? [01:00<00:00,  4.95it/s, Loss=0.4913, ClsAcc=96.88%, DomainAcc=50.00%, LR=1.46e-04]
+Test:[0/7]	Time  0.326 ( 0.326)	Loss 2.3291e+00 (2.3291e+00)
+ * Acc@1 52.273%
+Precision: 0.5746, Recall: 0.5514, F1 Score: 0.4956
+acc1 = 52.3
+lr: 0.00014606376323968783
+Epoch [48]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [48]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3558, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.45e-04]Epoch [48]:  40%|####      | 100/250 [00:25<00:37,  3.97it/s, Loss=0.3558, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.45e-04]
+Step 100/250:
+• Loss: 0.3558 (Cls: 0.0093, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [48]:  40%|####      | 100/250 [00:50<00:37,  3.97it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.44e-04]Epoch [48]:  80%|########  | 200/250 [00:50<00:12,  3.92it/s, Loss=0.3573, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.44e-04]
+Step 200/250:
+• Loss: 0.3573 (Cls: 0.0107, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [48]:  80%|########  | 200/250 [01:03<00:12,  3.92it/s, Loss=0.3557, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.44e-04]Epoch [48]: |          | 300/? [01:03<00:00,  5.15it/s, Loss=0.3557, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.44e-04]      
+Step 250/250:
+• Loss: 0.3557 (Cls: 0.0091, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [48]: |          | 300/? [01:03<00:00,  4.75it/s, Loss=0.3557, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.44e-04]
+Test:[0/7]	Time  0.303 ( 0.303)	Loss 2.2122e+00 (2.2122e+00)
+ * Acc@1 51.364%
+Precision: 0.5646, Recall: 0.5432, F1 Score: 0.4837
+acc1 = 51.4
+lr: 0.00014399190959908407
+Epoch [49]:   0%|          | 0/250 [00:00<?, ?it/s]Epoch [49]:   0%|          | 0/250 [00:25<?, ?it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.43e-04]Epoch [49]:  40%|####      | 100/250 [00:25<00:37,  3.99it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.43e-04]
+Step 100/250:
+• Loss: 0.3562 (Cls: 0.0096, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [49]:  40%|####      | 100/250 [00:49<00:37,  3.99it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.42e-04]Epoch [49]:  80%|########  | 200/250 [00:49<00:12,  4.01it/s, Loss=0.3562, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.42e-04]
+Step 200/250:
+• Loss: 0.3562 (Cls: 0.0096, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [49]:  80%|########  | 200/250 [01:02<00:12,  4.01it/s, Loss=0.3559, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.42e-04]Epoch [49]: |          | 300/? [01:02<00:00,  5.14it/s, Loss=0.3559, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.42e-04]      
+Step 250/250:
+• Loss: 0.3559 (Cls: 0.0093, DA: 0.6931)
+• Batch: 32 src, 32 tgt samples
+• Mem: 244.5MB used
+
+Epoch [49]: |          | 300/? [01:02<00:00,  4.77it/s, Loss=0.3559, ClsAcc=100.00%, DomainAcc=50.00%, LR=1.42e-04]
+Test:[0/7]	Time  0.337 ( 0.337)	Loss 2.3156e+00 (2.3156e+00)
+ * Acc@1 51.818%
+Precision: 0.5697, Recall: 0.5473, F1 Score: 0.4897
+acc1 = 51.8
+best_acc1 = 60.9
+Test:[0/7]	Time  0.659 ( 0.659)	Loss 3.4880e+00 (3.4880e+00)
+ * Acc@1 60.909%
+Precision: 0.6391, Recall: 0.6263, F1 Score: 0.6044
+test_acc1 = 60.9

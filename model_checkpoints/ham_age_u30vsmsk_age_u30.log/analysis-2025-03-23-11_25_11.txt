@@ -1,0 +1,24 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:40: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+Extracting Features:   0%|          | 0/17 [00:00<?, ?it/s]Extracting Features:   6%|5         | 1/17 [00:03<00:53,  3.34s/it]Extracting Features:  35%|###5      | 6/17 [00:03<00:04,  2.20it/s]Extracting Features:  47%|####7     | 8/17 [00:03<00:03,  2.94it/s]Extracting Features:  59%|#####8    | 10/17 [00:04<00:01,  3.76it/s]Extracting Features:  71%|#######   | 12/17 [00:04<00:01,  4.64it/s]Extracting Features:  82%|########2 | 14/17 [00:04<00:00,  5.51it/s]Extracting Features:  94%|#########4| 16/17 [00:04<00:00,  6.32it/s]Extracting Features: 100%|##########| 17/17 [00:04<00:00,  3.55it/s]
+Extracting Features:   0%|          | 0/17 [00:00<?, ?it/s]Extracting Features:   6%|5         | 1/17 [00:00<00:05,  2.98it/s]Extracting Features:  18%|#7        | 3/17 [00:00<00:02,  6.68it/s]Extracting Features:  29%|##9       | 5/17 [00:00<00:01,  8.14it/s]Extracting Features:  41%|####1     | 7/17 [00:00<00:01,  8.90it/s]Extracting Features:  53%|#####2    | 9/17 [00:01<00:00,  9.41it/s]Extracting Features:  65%|######4   | 11/17 [00:01<00:00,  9.59it/s]Extracting Features:  76%|#######6  | 13/17 [00:01<00:00,  9.70it/s]Extracting Features:  88%|########8 | 15/17 [00:01<00:00,  9.91it/s]Extracting Features: 100%|##########| 17/17 [00:01<00:00, 10.10it/s]Extracting Features: 100%|##########| 17/17 [00:01<00:00,  8.91it/s]
+Extracting Features:   0%|          | 0/14 [00:00<?, ?it/s]Extracting Features:   7%|7         | 1/14 [00:06<01:26,  6.66s/it]Extracting Features:  21%|##1       | 3/14 [00:12<00:42,  3.90s/it]Extracting Features:  36%|###5      | 5/14 [00:17<00:28,  3.17s/it]Extracting Features:  50%|#####     | 7/14 [00:20<00:17,  2.47s/it]Extracting Features:  64%|######4   | 9/14 [00:25<00:12,  2.40s/it]Extracting Features:  71%|#######1  | 10/14 [00:25<00:07,  1.96s/it]Extracting Features:  79%|#######8  | 11/14 [00:30<00:08,  2.69s/it]Extracting Features:  93%|#########2| 13/14 [00:36<00:02,  2.76s/it]Extracting Features: 100%|##########| 14/14 [00:36<00:00,  2.59s/it]
+source_feature.shape:  torch.Size([544, 512])
+/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/sklearn/manifold/_t_sne.py:1164: FutureWarning: 'n_iter' was renamed to 'max_iter' in version 1.5 and will be removed in 1.7.
+  warnings.warn(
+Source t-SNE Shape: (544, 2)
+Target t-SNE Shape: (448, 2)
+Saving t-SNE to /u/student/2021/cs21resch15002/DomainShift/Outputs/ISIC_Dataset/ham_age_u30vsmsk_age_u30.log/visualize/ham_age_u30_vs_msk_age_u30_TSNE.pdf
+epoch 0 accuracy: 58.793968200683594 A-dist: 0.3517587184906006
+epoch 1 accuracy: 58.793968200683594 A-dist: 0.3517587184906006
+epoch 2 accuracy: 58.793968200683594 A-dist: 0.3517587184906006
+epoch 3 accuracy: 58.793968200683594 A-dist: 0.3517587184906006
+epoch 4 accuracy: 59.29648208618164 A-dist: 0.3718593120574951
+epoch 5 accuracy: 58.29145812988281 A-dist: 0.33165836334228516
+epoch 6 accuracy: 58.793968200683594 A-dist: 0.3517587184906006
+epoch 7 accuracy: 61.809043884277344 A-dist: 0.47236180305480957
+epoch 8 accuracy: 59.29648208618164 A-dist: 0.3718593120574951
+epoch 9 accuracy: 61.809043884277344 A-dist: 0.47236180305480957
+A-distance = tensor(0.4724, device='cuda:0')

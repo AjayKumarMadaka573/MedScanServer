@@ -1,0 +1,40 @@
+/u/student/2021/cs21resch15002/DomainShift/./dann.py:41: UserWarning: You have chosen to seed training. This will turn on the CUDNN deterministic setting, which can slow down your training considerably! You may see unexpected behavior when restarting from checkpoints.
+  warnings.warn('You have chosen to seed training. '
+=> using model 'resnet18'
+Extracted Feature Dim: 512
+  0%|          | 0/14 [00:00<?, ?it/s]Original Input Shape: torch.Size([32, 3, 224, 224])
+Modified Input Shape: torch.Size([32, 3, 224, 224])
+  0%|          | 0/14 [00:11<?, ?it/s]
+Traceback (most recent call last):
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 419, in <module>
+    main(args)
+  File "/u/student/2021/cs21resch15002/DomainShift/./dann.py", line 134, in main
+    source_feature = collect_feature(train_source_loader, feature_extractor, device)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/u/student/2021/cs21resch15002/DomainShift/tllib/utils/analysis/__init__.py", line 36, in collect_feature
+    feature = feature_extractor(inputs).cpu()
+              ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/container.py", line 250, in forward
+    input = module(input)
+            ^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1739, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/module.py", line 1750, in _call_impl
+    return forward_call(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/pooling.py", line 1455, in forward
+    return F.adaptive_avg_pool2d(input, self.output_size)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/functional.py", line 1381, in adaptive_avg_pool2d
+    _output_size = _list_with_default(output_size, input.size())
+                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/student/2021/cs21resch15002/anaconda3/envs/vptta/lib/python3.12/site-packages/torch/nn/modules/utils.py", line 41, in _list_with_default
+    raise ValueError(f"Input dimension should be at least {len(out_size) + 1}")
+ValueError: Input dimension should be at least 3
