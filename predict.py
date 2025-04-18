@@ -131,7 +131,15 @@ def main():
         feat_dir = os.path.join(os.path.dirname(__file__), "domain_features_dann")
 
         #debugging
-        # 
+        # Define the model directory path
+        model_dir1 = '/app/domain_features_dann'  # or any path you want
+
+        # List all files in the directory
+        files = [f for f in os.listdir(model_dir1) if os.path.isfile(os.path.join(model_dir1, f))]
+
+        # Print the list of files as JSON strings (one per line)
+        for file in files:
+            print(json.dumps(file))
 
         best_result = {"task": None, "distance": float('inf'), "label": None}
         
