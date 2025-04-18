@@ -7,6 +7,17 @@ from PIL import Image
 import json
 import sys
 import torch.nn.functional as F
+import logging
+
+# Configure logging
+logging.basicConfig(
+    level=logging.INFO,
+    format='%(asctime)s - %(levelname)s - %(message)s',
+    handlers=[
+        logging.StreamHandler(sys.stdout)
+    ]
+)
+
 # Configure output encoding
 sys.stdout = sys.__stdout__
 sys.stderr = sys.__stderr__
@@ -50,108 +61,105 @@ class Classifier(nn.Module):
         features = self.bottleneck(x)
         return self.classifier(features), features
 
-# def load_model(task_path):
-#     backbone = models.resnet18(weights=None)
-#     model = Classifier(backbone)
-    
-#     try:
-#         checkpoint = torch.load(task_path, map_location=device, weights_only=False)
-#     except Exception as e:
-#         print(f"Error loading checkpoint file: {str(e)}", file=sys.stderr)
-#         raise RuntimeError("Checkpoint loading failed. Ensure the checkpoint is compatible with your PyTorch version.")
-    
-#     # Check if the checkpoint keys contain 'module.' and remove it for multi-GPU model saving
-#     if any(k.startswith('module.') for k in checkpoint.keys()):
-#         checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
-    
-#     # Try loading the checkpoint into the model
-#     try:
-#         model.load_state_dict(checkpoint, strict=False)
-#     except RuntimeError as e:
-#         print(f"Error loading state_dict: {str(e)}", file=sys.stderr)
-#         raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
-    
-#     return model.to(device).eval()
-import torch
-import torch.nn as nn
-from torchvision import models
-import sys
+def log_error(context, error, details=None):
+    error_data = {
+        "context": context,
+        "error": str(error),
+        "details": details
+    }
+    logging.error(json.dumps(error_data, indent=2))
+    return error_data
 
 def load_model(task_path):
-    backbone = models.resnet18(weights=None)
-    model = Classifier(backbone)
+    try:
+        # Verify file exists before attempting to load
+        if not os.path.exists(task_path):
+            raise FileNotFoundError(f"Model checkpoint not found at {task_path}")
+            
+        backbone = models.resnet18(weights=None)
+        model = Classifier(backbone)
 
-    try:
-        # Open checkpoint file in binary mode and load the model
-        with open(task_path, 'rb') as f:
-            checkpoint = torch.load(f, map_location=device, weights_only=False)
-    except Exception as e:
-        print(f"Error loading checkpoint file: {str(e)}", file=sys.stderr)
-        raise RuntimeError("Checkpoint loading failed. Ensure the checkpoint is compatible with your PyTorch version.")
-    
-    # Handle 'module.' prefix for multi-GPU saved models
-    if any(k.startswith('module.') for k in checkpoint.keys()):
-        checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
-    
-    try:
+        # Load checkpoint with explicit error handling
+        checkpoint = torch.load(task_path, map_location=device, weights_only=False)
+        
+        # Handle 'module.' prefix for multi-GPU saved models
+        if any(k.startswith('module.') for k in checkpoint.keys()):
+            checkpoint = {k.replace('module.', ''): v for k, v in checkpoint.items()}
+        
         model.load_state_dict(checkpoint, strict=False)
-    except RuntimeError as e:
-        print(f"Error loading state_dict: {str(e)}", file=sys.stderr)
-        raise RuntimeError("Mismatch between model architecture and checkpoint. Ensure they are compatible.")
-    
-    return model.to(device).eval()
+        return model.to(device).eval()
+        
+    except Exception as e:
+        raise RuntimeError(f"Model loading failed: {str(e)}")
 
 def process_image(image_path):
     try:
+        if not os.path.exists(image_path):
+            raise FileNotFoundError(f"Image file not found at {image_path}")
+            
         img = Image.open(image_path).convert('RGB')
         return transform(img).unsqueeze(0).to(device)
     except Exception as e:
-        print(f"Image processing error: {str(e)}", file=sys.stderr)
-        return None
+        raise RuntimeError(f"Image processing failed: {str(e)}")
 
-def convert_to_serializable(obj):
-    if isinstance(obj, np.generic):
-        return obj.item()
-    elif isinstance(obj, dict):
-        return {k: convert_to_serializable(v) for k, v in obj.items()}
-    elif isinstance(obj, (list, tuple)):
-        return [convert_to_serializable(x) for x in obj]
-    return obj
+def validate_paths(base_dir, subdirs=None):
+    """Validate that required directories exist"""
+    if not os.path.exists(base_dir):
+        raise FileNotFoundError(f"Base directory not found: {base_dir}")
+    
+    if subdirs:
+        for subdir in subdirs:
+            path = os.path.join(base_dir, subdir)
+            if not os.path.exists(path):
+                logging.warning(f"Subdirectory not found: {path}")
+
+def get_relative_path(*path_parts):
+    """Get path relative to the script directory"""
+    script_dir = os.path.dirname(os.path.abspath(__file__))
+    return os.path.join(script_dir, *path_parts)
 
 def main():
     try:
+        # Validate input
         if len(sys.argv) < 2:
-            raise ValueError("Missing image path argument")
+            raise ValueError("Missing required argument: image_path")
             
         image_path = sys.argv[1]
-        if not os.path.exists(image_path):
-            raise FileNotFoundError(f"Image not found: {image_path}")
         
-        model_dir = os.path.join(os.path.dirname(__file__), "model_checkpoints")
-        feat_dir = os.path.join(os.path.dirname(__file__), "domain_features_dann")
-
-        #debugging
-        # Define the model directory path
-        model_dir1 = '/app/domain_features_dann'  # or any path you want
-
-        # List all files in the directory
-     
-        best_result = {"task": None, "distance": float('inf'), "label": None}
+        # Set up paths - using relative paths from script location
+        base_dir = get_relative_path()
+        model_dir = get_relative_path("model_checkpoints")
+        feat_dir = get_relative_path("domain_features_dann")
         
-        for task in domain_tasks:
+        # Validate directories exist
+        validate_paths(model_dir)
+        validate_paths(feat_dir)
+        
+        # Initialize result tracking
+        best_result = {
+            "task": None, 
+            "distance": float('inf'), 
+            "label": None,
+            "confidence": None,
+            "warnings": []
+        }
+        
+        # Process each task
+        for task, task_name in domain_tasks.items():
             try:
+                # Construct paths
                 model_path = os.path.join(model_dir, f"{task}.log", "checkpoints", "best.pth")
                 feat_path = os.path.join(feat_dir, f"{task}_features.npy")
                 
-                # if not all(os.path.exists(p) for p in [model_path, feat_path]):
-                #     for p in [model_path, feat_path]:
-                #         print(json.dumps(p), file=sys.stderr)
-                #     continue
+                # Skip if required files don't exist
+                if not all(os.path.exists(p) for p in [model_path, feat_path]):
+                    missing = [p for p in [model_path, feat_path] if not os.path.exists(p)]
+                    best_result["warnings"].append(f"Missing files for task {task}: {missing}")
+                    continue
                 
+                # Load and process
                 model = load_model(model_path)
                 img_tensor = process_image(image_path)
-                if img_tensor is None:
-                    continue
                 
                 with torch.no_grad():
                     logits, features = model(img_tensor)
@@ -167,37 +175,60 @@ def main():
                 
                 if distance < best_result["distance"]:
                     best_result.update({
-                        "task": task,
+                        "task": task_name,
                         "distance": distance,
                         "label": label,
                         "confidence": confidence
                     })
                     
             except Exception as e:
-                print(f"Error processing {task}: {str(e)}", file=sys.stderr)
+                error_details = {
+                    "task": task,
+                    "error": str(e),
+                    "type": type(e).__name__
+                }
+                best_result["warnings"].append(error_details)
+                logging.error(f"Task {task} failed: {str(e)}")
                 continue
         
-        # if best_result["task"] is None:
-        #     raise RuntimeError("No valid tasks processed")
-        serializable_result = []
-        if best_result["task"] is not None:
-            best_result["task"] = domain_tasks[best_result["task"]]
+        # Prepare final output
+        output = {
+            "status": "success" if best_result["task"] else "partial_success",
+            "result": {
+                "prediction": best_result["label"],
+                "confidence": best_result["confidence"],
+                "task": best_result["task"],
+                "distance": best_result["distance"]
+            },
+            "metadata": {
+                "processed_tasks": len(domain_tasks) - len(best_result["warnings"]),
+                "failed_tasks": len(best_result["warnings"])
+            }
+        }
+        
+        if best_result["warnings"]:
+            output["warnings"] = best_result["warnings"]
+        
+        # Convert label to human-readable
+        if output["result"]["prediction"] is not None:
             label_map = {0: "Benign", 1: "Malignant"}
-            best_result["label"] = label_map.get(best_result["label"], "Unknown")
-        # best_result["confidence"] = round(float(best_result["confidence"]) * 100, 2)  
-
-        # Ensure all values are JSON serializable
-            serializable_result = convert_to_serializable(best_result)
-        else:
-            serializable_result = convert_to_serializable({
-                value:"No Value"
-            })
-        print(json.dumps(serializable_result))
+            output["result"]["prediction"] = label_map.get(output["result"]["prediction"], "Unknown")
+        
+        print(json.dumps(output, indent=2))
         
     except Exception as e:
-        error_msg = {"error": str(e)}
-        print(json.dumps(error_msg), file=sys.stderr)
-        sys.exit(0)
+        error_output = {
+            "status": "error",
+            "error": str(e),
+            "type": type(e).__name__,
+            "details": {
+                "image_path": image_path if 'image_path' in locals() else None,
+                "python_version": sys.version,
+                "torch_version": torch.__version__
+            }
+        }
+        print(json.dumps(error_output, indent=2))
+        sys.exit(1)
 
 if __name__ == "__main__":
     main()
