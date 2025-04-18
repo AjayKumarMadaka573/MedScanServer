@@ -179,13 +179,19 @@ def main():
         
         # if best_result["task"] is None:
         #     raise RuntimeError("No valid tasks processed")
-        best_result["task"] = domain_tasks[best_result["task"]]
-        label_map = {0: "Benign", 1: "Malignant"}
-        best_result["label"] = label_map.get(best_result["label"], "Unknown")
+        serializable_result = []
+        if best_result["task"] is not None:
+            best_result["task"] = domain_tasks[best_result["task"]]
+            label_map = {0: "Benign", 1: "Malignant"}
+            best_result["label"] = label_map.get(best_result["label"], "Unknown")
         # best_result["confidence"] = round(float(best_result["confidence"]) * 100, 2)  
 
         # Ensure all values are JSON serializable
-        serializable_result = convert_to_serializable(best_result)
+            serializable_result = convert_to_serializable(best_result)
+        else:
+            serializable_result = convert_to_serializable({
+                value:"No Value"
+            })
         print(json.dumps(serializable_result))
         
     except Exception as e:
