@@ -24,6 +24,12 @@ sys.stderr = sys.__stderr__
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
+def safe_print_json(data):
+    """Safely print JSON to stdout without any other output"""
+    print(json.dumps(data, separators=(',', ':')))
+    sys.stdout.flush()
+
+
 # Image transform
 transform = transforms.Compose([
     transforms.Resize((224, 224)),
