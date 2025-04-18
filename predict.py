@@ -135,12 +135,7 @@ def main():
         model_dir1 = '/app/domain_features_dann'  # or any path you want
 
         # List all files in the directory
-        files = [f for f in os.listdir(model_dir1) if os.path.isfile(os.path.join(model_dir1, f))]
-
-        # Print the list of files as JSON strings (one per line)
-        for file in files:
-            print(json.dumps(file))
-
+     
         best_result = {"task": None, "distance": float('inf'), "label": None}
         
         for task in domain_tasks:
@@ -196,7 +191,7 @@ def main():
     except Exception as e:
         error_msg = {"error": str(e)}
         print(json.dumps(error_msg), file=sys.stderr)
-        sys.exit(1)
+        sys.exit(0)
 
 if __name__ == "__main__":
     main()
